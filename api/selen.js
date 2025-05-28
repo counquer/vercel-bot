@@ -14,25 +14,33 @@ module.exports = async (req, res) => {
     }
 
     const notion = new Client({ auth: process.env.NOTION_API_KEY });
-    const databaseId = process.env.NOTION_DATABASE_ID;
+    const databaseId = process.env.DB_TRIGGERS;
 
     let contenido;
     if (req.method === 'POST') {
       const { properties } = req.body;
-      if (properties.clave.rich_text[0]?.text.content !== 'cochina ven a mi') {
+      if (properties.Clave?.rich_text[0]?.text.content !== 'cochina ven a mi') {
         return res.status(200).json({ message: 'No action needed' });
       }
-      contenido = properties.contenido.rich_text[0]?.text.content;
+      contenido = properties.Contenido.rich_text[0]?.text.content;
     } else {
       const query = await notion.databases.query({
         database_id: databaseId,
         filter: {
-          property: 'clave',
-          rich_text: { equals: 'cochina ven a mi' }
+          and: [
+            {
+              property: 'Clave',
+              rich_text: { equals: 'cochina ven a mi' }
+            },
+            {
+              property: 'seccion',
+              rich_text: { equals: 'Trigger' }
+            }
+          ]
         }
       });
       console.log('Resultados de Notion:', JSON.stringify(query.results, null, 2));
-      contenido = query.results[0]?.properties.contenido.rich_text[0]?.text.content;
+      contenido = query.results[0]?.properties.Contenido.rich_text[0]?.text.content;
       if (!contenido) {
         return res.status(404).json({ error: 'No se encontró "cochina ven a mi"', results: query.results });
       }
