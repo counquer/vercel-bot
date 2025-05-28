@@ -1,0 +1,9 @@
+{
+  "name": "selen-api",
+  "version": "1.0.0",
+  "main": "api/selen.js",
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "axios": "^1.7.2"
+  }
+}
