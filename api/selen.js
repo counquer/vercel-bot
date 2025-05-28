@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
     const notion = new Client({ auth: process.env.NOTION_API_KEY });
     const databaseId = process.env.DB_TRIGGERS;
 
-    console.log("Consultando base de datos Triggers con ID:", databaseId); // Log adicional para depurar
+    console.log("Consultando base de datos Triggers con ID:", databaseId);
 
     let contenido;
     if (req.method === 'POST') {
