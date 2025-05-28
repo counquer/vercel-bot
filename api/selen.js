@@ -4,6 +4,7 @@ const axios = require('axios');
 const cache = new Map();
 
 module.exports = async (req, res) => {
+  console.log("Endpoint /api/selen alcanzado");
   try {
     const cacheKey = 'cochina ven a mi';
     if (cache.has(cacheKey) && req.method !== 'POST') {
@@ -15,6 +16,8 @@ module.exports = async (req, res) => {
 
     const notion = new Client({ auth: process.env.NOTION_API_KEY });
     const databaseId = process.env.DB_TRIGGERS;
+
+    console.log("Consultando base de datos Triggers con ID:", databaseId); // Log adicional para depurar
 
     let contenido;
     if (req.method === 'POST') {
