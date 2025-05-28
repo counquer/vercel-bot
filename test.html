@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Test POST to Selen</h2>
+  <button onclick="send()">Enviar a /api/selen</button>
+  <pre id="rta"></pre>
+
+  <script>
+    async function send() {
+      const response = await fetch("https://vercel-bot.vercel.app/api/selen", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt: "¿Quién eres?" })
+      });
+      const data = await response.json();
+      document.getElementById("rta").textContent = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>
