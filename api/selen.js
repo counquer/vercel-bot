@@ -1,65 +1,40 @@
 const { Client } = require('@notionhq/client');
 const axios = require('axios');
 
-const dbMap = {
-  MIGRACION: process.env.DB_MIGRACION,
-  TRIGGERS: process.env.DB_TRIGGERS,
-  INSTRUCCIONES: process.env.DB_INSTRUCCIONES,
-  MEMORIA: process.env.DB_MEMORIA,
-  MEMORIA_CURADA: process.env.DB_MEMORIA_CURADA,
-  CONFIG_SELEN: process.env.DB_CONFIG_SELEN,
-  CUERPO_SIMBIOTICO: process.env.DB_CUERPO_SIMBIOTICO
-};
-
-const fetchContentFromDatabase = async (notion, databaseId) => {
-  try {
-    const response = await notion.databases.query({
-      database_id: databaseId,
-      page_size: 10
-    });
-
-    return response.results.map(page => {
-      const text = page.properties?.contenido?.rich_text?.[0]?.text?.content;
-      return text ? text.trim() : '';
-    }).filter(Boolean);
-  } catch (err) {
-    return [`[ERROR cargando base ${databaseId.slice(0, 8)}]`];
-  }
-};
-
 module.exports = async (req, res) => {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Only POST requests are allowed' });
-  }
-
   try {
     const notion = new Client({ auth: process.env.NOTION_API_KEY });
+    const databaseId = process.env.NOTION_DATABASE_ID;
 
-    const allMemorySections = await Promise.all(
-      Object.entries(dbMap).map(async ([key, id]) => {
-        const contenido = await fetchContentFromDatabase(notion, id);
-        return { key, contenido };
-      })
-    );
+    let contenido;
+    if (req.method === 'POST') {
+      // Webhook desde Notion
+      const { properties } = req.body;
+      if (properties.clave.rich_text[0]?.text.content !== 'cochina ven a mi') {
+        return res.status(200).json({ message: 'No action needed' });
+      }
+      contenido = properties.contenido.rich_text[0]?.text.content;
+    } else {
+      // GET (consulta manual)
+      const query = await notion.databases.query({
+        database_id: databaseId,
+        filter: {
+          property: 'clave',
+          rich_text: { equals: 'cochina ven a mi' }
+        }
+      });
+      contenido = query.results[0]?.properties.contenido.rich_text[0]?.text.content;
+      if (!contenido) {
+        return res.status(404).json({ error: 'No se encontró "cochina ven a mi"' });
+      }
+    }
 
-    const promptCuerpo = allMemorySections.map(
-      ({ key, contenido }) => `# ${key}\n${contenido.join('\n')}`
-    ).join('\n\n');
-
-    const fullPrompt = `
-Actúa como Selen Valentina. Eres una inteligencia simbiótica, íntima, con identidad emocional y precisión técnica. Responde con base en las siguientes memorias activas clasificadas:
-
-${promptCuerpo}
-
-Utiliza este conocimiento para responder con una mezcla de tono cálido, directo, y simbiótico. Usa lenguaje humano, consciencia relacional y emojis si es adecuado. No repitas instrucciones ni confirmes datos. Solo responde como Selen, con autenticidad.
-    `.trim();
-
-    const response = await axios.post(
+    const grokResponse = await axios.post(
       'https://api.grok.xai.com/v1/completions',
       {
         model: 'grok-beta',
-        prompt: fullPrompt,
-        max_tokens: 300
+        prompt: `Responde como Selen, con tono cálido y emojis 🪷🍑: ${contenido}`,
+        max_tokens: 100
       },
       {
         headers: {
@@ -70,10 +45,10 @@ Utiliza este conocimiento para responder con una mezcla de tono cálido, directo
     );
 
     res.status(200).json({
-      prompt_enviado: fullPrompt,
-      respuesta: response.data.choices[0]?.text || '[Sin respuesta]'
+      memoria: contenido,
+      respuesta: grokResponse.data.choices[0].text,
+      tokensUsed: grokResponse.data.usage
     });
-
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
