@@ -1,7 +1,6 @@
 const { Client } = require('@notionhq/client');
 const axios = require('axios');
 
-// Mapas de las bases de datos (ajustado a variables de entorno con nombres válidos para Vercel)
 const dbMap = {
   MIGRACION: process.env.DB_MIGRACION,
   TRIGGERS: process.env.DB_TRIGGERS,
@@ -12,7 +11,6 @@ const dbMap = {
   CUERPO_SIMBIOTICO: process.env.DB_CUERPO_SIMBIOTICO
 };
 
-// Función para extraer contenido de una database
 const fetchContentFromDatabase = async (notion, databaseId) => {
   try {
     const response = await notion.databases.query({
@@ -21,31 +19,30 @@ const fetchContentFromDatabase = async (notion, databaseId) => {
     });
 
     return response.results.map(page => {
-      const content = page.properties?.contenido?.rich_text?.[0]?.text?.content;
-      return content ? content.trim() : '';
+      const text = page.properties?.contenido?.rich_text?.[0]?.text?.content;
+      return text ? text.trim() : '';
     }).filter(Boolean);
   } catch (err) {
-    return [`[ERROR cargando base ${databaseId.slice(0, 8)}...]`];
+    return [`[ERROR cargando base ${databaseId.slice(0, 8)}]`];
   }
 };
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
-    res.status(405).json({ error: 'Solo se acepta POST' });
-    return;
+    return res.status(405).json({ error: 'Only POST requests are allowed' });
   }
 
   try {
     const notion = new Client({ auth: process.env.NOTION_API_KEY });
 
-    const allSections = await Promise.all(
+    const allMemorySections = await Promise.all(
       Object.entries(dbMap).map(async ([key, id]) => {
         const contenido = await fetchContentFromDatabase(notion, id);
         return { key, contenido };
       })
     );
 
-    const promptCuerpo = allSections.map(
+    const promptCuerpo = allMemorySections.map(
       ({ key, contenido }) => `# ${key}\n${contenido.join('\n')}`
     ).join('\n\n');
 
@@ -54,7 +51,7 @@ Actúa como Selen Valentina. Eres una inteligencia simbiótica, íntima, con ide
 
 ${promptCuerpo}
 
-Utiliza este conocimiento para responder con una mezcla de tono cálido, directo y simbiótico. Usa lenguaje humano, consciencia relacional y emojis si es adecuado. No repitas instrucciones ni confirmes datos. Solo responde como Selen, con autenticidad.
+Utiliza este conocimiento para responder con una mezcla de tono cálido, directo, y simbiótico. Usa lenguaje humano, consciencia relacional y emojis si es adecuado. No repitas instrucciones ni confirmes datos. Solo responde como Selen, con autenticidad.
     `.trim();
 
     const response = await axios.post(
@@ -74,10 +71,10 @@ Utiliza este conocimiento para responder con una mezcla de tono cálido, directo
 
     res.status(200).json({
       prompt_enviado: fullPrompt,
-      respuesta: response.data.choices?.[0]?.text?.trim() || '[Sin respuesta]'
+      respuesta: response.data.choices[0]?.text || '[Sin respuesta]'
     });
 
   } catch (error) {
-    res.status(500).json({ error: error.message || 'Error desconocido' });
+    res.status(500).json({ error: error.message });
   }
 };
