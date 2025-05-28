@@ -5,7 +5,7 @@ const cache = new Map();
 
 module.exports = async (req, res) => {
   try {
-    const cacheKey = 'cochina_ven_a_mi';
+    const cacheKey = 'cochina ven a mi';
     if (cache.has(cacheKey) && req.method !== 'POST') {
       const { contenido, timestamp } = cache.get(cacheKey);
       if (Date.now() - timestamp < 60000) {
