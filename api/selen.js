@@ -83,7 +83,7 @@ module.exports = async (req, res) => {
         }
         return null;
       } catch (error) {
-        console.error(`Error consultando DB ${dbId}:`, error.message);
+        console.error(`Consultando DB ${dbId}: ${error.message}`); // Corrección del mensaje de log
         if (error.status === 401) {
           throw new Error("No autorizado para acceder a Notion. Verifica NOTION_API_KEY y permisos.");
         }
@@ -146,7 +146,7 @@ module.exports = async (req, res) => {
       body: JSON.stringify({
         parent: { database_id: process.env.DB_MEMORIA_CURADA },
         properties: {
-          Name: { title: [{ text: { content: "Resumen de memoria simbiótica" } }] }, // Usar "Name" como título
+          Name: { title: [{ text: { content: "Resumen de memoria simbiótica" } }] },
           Respuesta: { rich_text: [{ text: { content: respuestaGrok } }] },
           Fecha: { date: { start: new Date().toISOString() } }
         }
