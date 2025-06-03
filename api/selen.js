@@ -25,7 +25,6 @@ const DATABASE_IDS = [
   process.env.DB_CUERPO_SIMBIOTICO
 ];
 
-// Validar que todas las IDs de bases de datos estén definidas
 if (DATABASE_IDS.some(id => !id)) {
   console.error("Faltan IDs de bases de datos en las variables de entorno");
   process.exit(1);
