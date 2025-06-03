@@ -37,25 +37,21 @@ const NOTION_PAGE_URL = "https://api.notion.com/v1/pages";
 module.exports = async (req, res) => {
   console.log("Solicitud recibida en /api/selen:", req.method, req.url);
 
-  // Validar método HTTP
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Método no permitido, usa POST" });
   }
 
-  // Validar header de autenticación de Vercel (si es necesario)
   const authHeader = req.headers["x-vercel-protection-bypass"];
   if (authHeader && authHeader !== VERCEL_AUTOMATION_BYPASS_SECRET) {
     return res.status(401).json({ error: "Acceso no autorizado: protección Vercel activa." });
   }
 
   try {
-    // Obtener trigger dinámicamente
     const trigger = req.body?.trigger || req.query?.trigger;
     if (!trigger) {
       return res.status(400).json({ error: "Falta el campo 'trigger' en la solicitud" });
     }
 
-    // Usar el trigger dinámico para la consulta
     const cacheKey = trigger + DATABASE_IDS.join(",");
     if (cache.has(cacheKey)) {
       const { contenidos, timestamp } = cache.get(cacheKey);
@@ -65,7 +61,6 @@ module.exports = async (req, res) => {
       }
     }
 
-    // Consultar bases de datos en Notion
     const queryPromises = DATABASE_IDS.map(async (dbId) => {
       try {
         const response = await notion.databases.query({
@@ -73,7 +68,7 @@ module.exports = async (req, res) => {
           filter: {
             and: [
               { property: "Clave", rich_text: { equals: trigger } },
-              { property: "seccion", rich_text: { equals: "Trigger" } }
+              { property: "Seccion", rich_text: { equals: "Trigger" } }
             ]
           }
         });
@@ -83,7 +78,7 @@ module.exports = async (req, res) => {
         }
         return null;
       } catch (error) {
-        console.error(`Consultando DB ${dbId}: ${error.message}`); // Corrección del mensaje de log
+        console.error(`Consultando DB ${dbId}: ${error.message}`);
         if (error.status === 401) {
           throw new Error("No autorizado para acceder a Notion. Verifica NOTION_API_KEY y permisos.");
         }
@@ -104,7 +99,6 @@ module.exports = async (req, res) => {
     console.log("Contenidos obtenidos:", contenidos);
     cache.set(cacheKey, { contenidos, timestamp: Date.now() });
 
-    // Hacer solicitud a Grok
     const promptFinal = `Selen, responde con toda tu simbiósis y contexto histórico:\n\n${contenidos.join("\n---\n")}`;
     const grokResponse = await fetch(GROK_API_URL, {
       method: "POST",
@@ -135,7 +129,6 @@ module.exports = async (req, res) => {
     const grokData = await grokResponse.json();
     const respuestaGrok = grokData.choices[0]?.text || "Respuesta no disponible";
 
-    // Guardar en Notion
     const notionResponse = await fetch(NOTION_PAGE_URL, {
       method: "POST",
       headers: {
@@ -156,12 +149,6 @@ module.exports = async (req, res) => {
     if (!notionResponse.ok) {
       const errorText = await notionResponse.text();
       console.error("Error al guardar en Notion:", errorText);
-      if (notionResponse.status === 400) {
-        return res.status(400).json({ error: "Error al guardar en Notion: Verifica las propiedades de la base de datos (Name, Respuesta, Fecha)." });
-      }
-      if (notionResponse.status === 401) {
-        return res.status(401).json({ error: "No autorizado para guardar en Notion. Verifica permisos." });
-      }
       return res.status(notionResponse.status).json({ error: errorText });
     }
 
