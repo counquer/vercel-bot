@@ -46,10 +46,13 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const trigger = req.body?.trigger || req.query?.trigger;
-    if (!trigger) {
+    const triggerOriginal = req.body?.trigger || req.query?.trigger;
+    if (!triggerOriginal) {
       return res.status(400).json({ error: "Falta el campo 'trigger' en la solicitud" });
     }
+
+    const trigger = triggerOriginal.trim().toLowerCase().replace(/\s+/g, "");
+    console.log("Trigger recibido normalizado:", trigger);
 
     const cacheKey = trigger + DATABASE_IDS.join(",");
     if (cache.has(cacheKey)) {
@@ -62,18 +65,15 @@ module.exports = async (req, res) => {
 
     const queryPromises = DATABASE_IDS.map(async (dbId) => {
       try {
-        const response = await notion.databases.query({
-          database_id: dbId,
-          filter: {
-            and: [
-              { property: "Clave", rich_text: { equals: trigger } },
-              { property: "Seccion", rich_text: { equals: "Trigger" } }
-            ]
+        const response = await notion.databases.query({ database_id: dbId });
+        for (const page of response.results) {
+          const clave = page.properties?.Clave?.title?.[0]?.plain_text?.trim().toLowerCase().replace(/\s+/g, "");
+          const seccion = page.properties?.Seccion?.rich_text?.[0]?.text?.content;
+          const contenido = page.properties?.Contenido?.rich_text?.[0]?.text?.content;
+          console.log("Clave en Notion normalizada:", clave);
+          if (clave === trigger && seccion === "Trigger") {
+            return contenido || "Sin contenido.";
           }
-        });
-        if (response.results.length > 0) {
-          const page = response.results[0];
-          return page.properties.Contenido?.rich_text[0]?.text?.content || "Sin contenido.";
         }
         return null;
       } catch (error) {
