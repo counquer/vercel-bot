@@ -93,7 +93,7 @@ module.exports = async (req, res) => {
       return res.status(404).json({ error: "No se encontraron memorias con la clave proporcionada." });
     }
 
-    const promptFinal = `Selen, responde con toda tu simbiosis y contexto hist¨®rico:\n\n${contenidos.join("\n---\n")}`;
+    const promptFinal = `Selen, responde con toda tu simbiosis y contexto historico:\n\n${contenidos.join("\n---\n")}`;
 
     const grokResponse = await fetch(GROK_API_URL, {
       method: "POST",
@@ -128,7 +128,7 @@ module.exports = async (req, res) => {
       body: JSON.stringify({
         parent: { database_id: process.env.DB_MEMORIA_CURADA },
         properties: {
-          Name: { title: [{ text: { content: "Resumen de memoria simbi¨®tica" } }] },
+          Name: { title: [{ text: { content: "Resumen de memoria simbiotica" } }] },
           Respuesta: { rich_text: [{ text: { content: respuestaGrok } }] },
           Fecha: { date: { start: new Date().toISOString() } }
         }
@@ -146,3 +146,20 @@ module.exports = async (req, res) => {
     return res.status(500).json({ error: "Error interno del servidor: " + error.message });
   }
 };
+// ?? Permite ejecución local desde línea de comandos
+if (require.main === module) {
+  const args = process.argv.find(arg => arg.startsWith("--trigger="));
+  if (args) {
+    const trigger = args.split("=")[1];
+    module.exports(
+      { method: "POST", body: { trigger }, headers: {} },
+      {
+        status: (code) => ({
+          json: (data) => console.log("?? Respuesta:", JSON.stringify(data, null, 2)),
+        }),
+      }
+    );
+  } else {
+    console.error("? Falta el parámetro '--trigger='");
+  }
+}
