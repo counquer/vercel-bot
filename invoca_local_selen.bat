@@ -1,15 +1,51 @@
-@echo off@echo off
-setlocal
+@echo off
+setlocal enabledelayedexpansion
 
-:: Cambiar a la carpeta donde está selen.js
-cd /d C:\openpose\selen-api\api
+REM --- Configuración inicial y robustez ---
+REM Cambia a la carpeta del script, aunque el BAT se ejecute desde otra ruta
+cd /d "%~dp0api"
 
-:: Solicitar trigger
-echo Escribe el trigger a invocar (ej: cochinavenami):
-set /p TRIGGER=
+REM Verifica existencia de selen.js
+if not exist "selen.js" (
+    echo [ERROR] No se encontró selen.js en %CD%
+    pause
+    exit /b 1
+)
 
-:: Ejecutar el archivo Node.js con las variables de entorno cargadas
-echo Ejecutando selen.js localmente con trigger: %TRIGGER%
-node selen.js --trigger=%TRIGGER%
+REM Verifica existencia de Node.js
+where node >nul 2>&1
+if errorlevel 1 (
+    echo [ERROR] Node.js no está instalado o no está en el PATH.
+    pause
+    exit /b 1
+)
 
+REM Solicitar trigger al usuario
+echo -----------------------------------------------
+echo Escribe el trigger a invocar (ej: cochinavenami)
+echo -----------------------------------------------
+set /p TRIGGER=Trigger: 
+
+REM Verifica que el usuario escribio algo
+if "!TRIGGER!"=="" (
+    echo [ERROR] Debes ingresar un trigger.
+    pause
+    exit /b 1
+)
+
+REM Ejecutar el archivo Node.js con trigger
+echo.
+echo Ejecutando selen.js localmente con trigger: !TRIGGER!
+echo -----------------------------------------------
+
+node selen.js --trigger="!TRIGGER!"
+set ERRLVL=%ERRORLEVEL%
+
+echo.
+if "%ERRLVL%"=="0" (
+    echo [OK] Finalizado correctamente.
+) else (
+    echo [ERROR] El script terminó con error (código %ERRLVL%).
+)
 pause
+endlocal
