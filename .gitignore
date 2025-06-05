@@ -1,6 +1,27 @@
-.env
+# Node modules
 node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Vercel build output
 .vercel/
 dist/
+
+# Log files
 *.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Vercel config (redundant)
 .vercel
+
+# Datos locales
+data/
+
+# Archivos CSV y temporales
+*.csv
+*.tmp
