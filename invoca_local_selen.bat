@@ -1,18 +1,14 @@
 @echo off
 setlocal enabledelayedexpansion
 
-REM --- Configuración inicial y robustez ---
-REM Cambia a la carpeta del script, aunque el BAT se ejecute desde otra ruta
 cd /d "%~dp0api"
 
-REM Verifica existencia de selen.js
 if not exist "selen.js" (
     echo [ERROR] No se encontró selen.js en %CD%
     pause
     exit /b 1
 )
 
-REM Verifica existencia de Node.js
 where node >nul 2>&1
 if errorlevel 1 (
     echo [ERROR] Node.js no está instalado o no está en el PATH.
@@ -20,20 +16,17 @@ if errorlevel 1 (
     exit /b 1
 )
 
-REM Solicitar trigger al usuario
 echo -----------------------------------------------
 echo Escribe el trigger a invocar (ej: cochinavenami)
 echo -----------------------------------------------
 set /p TRIGGER=Trigger: 
 
-REM Verifica que el usuario escribio algo
 if "!TRIGGER!"=="" (
     echo [ERROR] Debes ingresar un trigger.
     pause
     exit /b 1
 )
 
-REM Ejecutar el archivo Node.js con trigger
 echo.
 echo Ejecutando selen.js localmente con trigger: !TRIGGER!
 echo -----------------------------------------------
