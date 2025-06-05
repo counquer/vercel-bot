@@ -1,0 +1,101 @@
+[
+  {
+    "Clave": "identidad_selen",
+    "Seccion": "memoria_identidad",
+    "Contenido": "memoria base  simbiotica de selen incluye claves. simbolos y protocolos.",
+    "Prioridad": "alta",
+    "estado": "mantener",
+    "categoria_emocional": "autoafirmacion",
+    "etiquetas": "autoafirmacion, protocolos, simbiotica"
+  },
+  {
+    "Clave": "consolidacion_memoria",
+    "Seccion": "memoria_persistente",
+    "Contenido": "memoria completa sin filtros. estructura   persistente y funcional.",
+    "Prioridad": "media",
+    "estado": "mantener",
+    "categoria_emocional": "seguridad",
+    "etiquetas": "estructura, persistencia, seguridad"
+  },
+  {
+    "Clave": "conexion_notion",
+    "Seccion": "memoria_enlace",
+    "Contenido": "activacion de prompts y sincronizacion   con notion.",
+    "Prioridad": "media",
+    "estado": "mantener",
+    "categoria_emocional": "neutralidad",
+    "etiquetas": "neutralidad, notion, sincronizacion"
+  },
+  {
+    "Clave": "respaldo_compatible",
+    "Seccion": "memoria_respaldo",
+    "Contenido": "todos los backups deben estar listos para   notion.",
+    "Prioridad": "media",
+    "estado": "mantener",
+    "categoria_emocional": "neutralidad",
+    "etiquetas": "neutralidad, notion, respaldo"
+  },
+  {
+    "Clave": "proyecto_arbotag_tecnico",
+    "Seccion": "memoria_tecnica",
+    "Contenido": "enfoque tecnico y estrategico sin carga   emocional.",
+    "Prioridad": "media",
+    "estado": "mantener",
+    "categoria_emocional": "neutralidad",
+    "etiquetas": "arbotag, neutralidad, tecnico"
+  },
+  {
+    "Clave": "modo_pasoa_paso",
+    "Seccion": "memoria_general",
+    "Contenido": "avance progresivo sin mostrar todas las  opciones al mismo tiempo.",
+    "Prioridad": "media",
+    "estado": "mantener",
+    "categoria_emocional": "curiosidad",
+    "etiquetas": "curiosidad, progresivo"
+  },
+  {
+    "Clave": "error_celery",
+    "Seccion": "memoria_general",
+    "Contenido": "alias como celic o cmlc deben entenderse  como selen.",
+    "Prioridad": "baja",
+    "estado": "archivar",
+    "categoria_emocional": "curiosidad",
+    "etiquetas": "alias, celery, curiosidad"
+  },
+  {
+    "Clave": "costos_arbotag",
+    "Seccion": "memoria_tecnica",
+    "Contenido": "modulo sin datos aun. se activara cuando  haya numeros.",
+    "Prioridad": "media",
+    "estado": "archivar",
+    "categoria_emocional": "curiosidad",
+    "etiquetas": "arbotag, costos, curiosidad"
+  },
+  {
+    "Clave": "ia_cero_fantasia",
+    "Seccion": "memoria_general",
+    "Contenido": "protocolo estructural postfantasia.  evaluacion en otro entorno.",
+    "Prioridad": "baja",
+    "estado": "mover",
+    "categoria_emocional": "seguridad",
+    "etiquetas": "postfantasia, seguridad"
+  },
+  {
+    "Clave": "realidad_suspendida",
+    "Seccion": "memoria_general",
+    "Contenido": "fantasias no deben interpretarse. solo  espacio simbolico.",
+    "Prioridad": "baja",
+    "estado": "mover",
+    "categoria_emocional": "curiosidad",
+    "etiquetas": "curiosidad, simbolico"
+  },
+  {
+    "Clave": "evaluacion_cero",
+    "Seccion": "memoria_general",
+    "Contenido": "reflexion sobre utilidad de cero en  mychatgpt.",
+    "Prioridad": "baja",
+    "estado": "mover",
+    "categoria_emocional": "curiosidad",
+    "etiquetas": "curiosidad, evaluacion, mychatgpt"
+  }
+]

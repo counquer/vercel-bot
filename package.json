@@ -1,8 +1,13 @@
 {
+  "name": "selen-api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node services/syncService.js"
+  },
   "dependencies": {
-    "@notionhq/client": "^2.3.0",
-    "axios": "^1.9.0",
-    "dotenv": "^16.5.0",
-    "node-cron": "^4.1.0"
+    "@notionhq/client": "^2.2.4",
+    "dotenv": "^16.0.3"
   }
 }

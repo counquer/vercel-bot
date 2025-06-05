@@ -3,39 +3,48 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
-const databaseId = process.env.DB_MEMORIA_CURADA;
+const DATABASE_ID = process.env.DB_MEMORIA_CURADA;
 
-// Guarda una memoria curada en la base de Notion
-export async function guardarMemoriaCurada(memoria) {
-  return notion.pages.create({
-    parent: { database_id: databaseId },
-    properties: {
-      Respuesta: { title: [{ text: { content: memoria.respuesta } }] },
-      Emocionalidad: { rich_text: [{ text: { content: memoria.emocionalidad || "" } }] },
-      Timestamp: { date: { start: memoria.timestamp || new Date().toISOString() } }
-    }
-  });
+function pageToMemoria(page) {
+  return {
+    id: page.id,
+    respuesta: page.properties.Respuesta?.rich_text?.[0]?.plain_text || "",
+    timestamp: page.properties.Timestamp?.date?.start || "",
+  };
 }
 
-// Obtiene todas las memorias curadas (hasta 100, puedes paginar si necesitas más)
-export async function obtenerTodasMemoriasCuradas() {
-  const pages = [];
+async function obtenerTodasMemoriasCuradas() {
+  let results = [];
   let cursor = undefined;
+
   do {
     const response = await notion.databases.query({
-      database_id: databaseId,
+      database_id: DATABASE_ID,
       start_cursor: cursor,
-      page_size: 100
+      page_size: 100,
     });
-    for (const page of response.results) {
-      pages.push({
-        respuesta: page.properties.Respuesta?.title?.[0]?.plain_text || "",
-        emocionalidad: page.properties.Emocionalidad?.rich_text?.[0]?.plain_text || "",
-        timestamp: page.properties.Timestamp?.date?.start || ""
-      });
-    }
+    results = results.concat(response.results);
     cursor = response.has_more ? response.next_cursor : undefined;
   } while (cursor);
 
-  return pages;
+  return results.map(pageToMemoria);
 }
+
+async function guardarMemoriaCurada(memoria) {
+  return await notion.pages.create({
+    parent: { database_id: DATABASE_ID },
+    properties: {
+      Respuesta: {
+        rich_text: [{ text: { content: memoria.respuesta } }],
+      },
+      Timestamp: {
+        date: { start: memoria.timestamp },
+      },
+    },
+  });
+}
+
+export default {
+  obtenerTodasMemoriasCuradas,
+  guardarMemoriaCurada,
+};

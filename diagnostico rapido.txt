@@ -1,0 +1,3878 @@
+✅ 1. Ubicación real de selen.js
+
+
+C:\openpose\selen-api>dir /s
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 82EF-7DE9
+
+ Directorio de C:\openpose\selen-api
+
+31-05-2025  03:46    <DIR>          .
+28-05-2025  07:22    <DIR>          ..
+03-06-2025  08:08               685 .env
+28-05-2025  07:03                93 .env.example
+31-05-2025  02:55                54 .gitignore
+31-05-2025  02:55    <DIR>          .vercel
+29-05-2025  08:08    <DIR>          api
+31-05-2025  00:02    <DIR>          Memorias x7
+30-05-2025  23:03    <DIR>          Memorias x7a
+28-05-2025  07:18    <DIR>          node_modules
+28-05-2025  07:22                 0 Nuevo Documento de texto.txt
+28-05-2025  11:21            13.238 package-lock.json
+28-05-2025  11:21                84 package.json
+28-05-2025  09:04               587 test.html
+28-05-2025  11:22               209 vercel.json
+               8 archivos         14.950 bytes
+
+ Directorio de C:\openpose\selen-api\.git
+
+31-05-2025  03:46    <DIR>          ..
+28-05-2025  11:44                43 COMMIT_EDITMSG
+28-05-2025  07:51               301 config
+28-05-2025  07:44                73 description
+28-05-2025  11:02                98 FETCH_HEAD
+28-05-2025  10:51                21 HEAD
+28-05-2025  07:44    <DIR>          hooks
+28-05-2025  11:44            62.739 index
+28-05-2025  07:44    <DIR>          info
+28-05-2025  07:46    <DIR>          logs
+28-05-2025  11:44    <DIR>          objects
+28-05-2025  11:02                41 ORIG_HEAD
+28-05-2025  08:59    <DIR>          refs
+               7 archivos         63.316 bytes
+
+ Directorio de C:\openpose\selen-api\.git\hooks
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  07:44               478 applypatch-msg.sample
+28-05-2025  07:44               896 commit-msg.sample
+28-05-2025  07:44             4.726 fsmonitor-watchman.sample
+28-05-2025  07:44               189 post-update.sample
+28-05-2025  07:44               424 pre-applypatch.sample
+28-05-2025  07:44             1.649 pre-commit.sample
+28-05-2025  07:44               416 pre-merge-commit.sample
+28-05-2025  07:44             1.374 pre-push.sample
+28-05-2025  07:44             4.898 pre-rebase.sample
+28-05-2025  07:44               544 pre-receive.sample
+28-05-2025  07:44             1.492 prepare-commit-msg.sample
+28-05-2025  07:44             2.783 push-to-checkout.sample
+28-05-2025  07:44             2.308 sendemail-validate.sample
+28-05-2025  07:44             3.650 update.sample
+              14 archivos         25.827 bytes
+
+ Directorio de C:\openpose\selen-api\.git\info
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  07:44               240 exclude
+               1 archivos            240 bytes
+
+ Directorio de C:\openpose\selen-api\.git\logs
+
+28-05-2025  07:46    <DIR>          .
+28-05-2025  11:44             6.641 HEAD
+28-05-2025  08:59    <DIR>          refs
+               1 archivos          6.641 bytes
+
+ Directorio de C:\openpose\selen-api\.git\logs\refs
+
+28-05-2025  08:59    <DIR>          .
+28-05-2025  07:46    <DIR>          ..
+28-05-2025  07:46    <DIR>          heads
+28-05-2025  07:51    <DIR>          remotes
+28-05-2025  08:59               178 stash
+               1 archivos            178 bytes
+
+ Directorio de C:\openpose\selen-api\.git\logs\refs\heads
+
+28-05-2025  07:46    <DIR>          .
+28-05-2025  08:59    <DIR>          ..
+28-05-2025  11:44             4.156 main
+               1 archivos          4.156 bytes
+
+ Directorio de C:\openpose\selen-api\.git\logs\refs\remotes
+
+28-05-2025  07:51    <DIR>          .
+28-05-2025  08:59    <DIR>          ..
+28-05-2025  07:51    <DIR>          origin
+               0 archivos              0 bytes
+
+ Directorio de C:\openpose\selen-api\.git\logs\refs\remotes\origin
+
+28-05-2025  07:51    <DIR>          .
+28-05-2025  07:51    <DIR>          ..
+28-05-2025  11:45             3.000 main
+               1 archivos          3.000 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects
+
+28-05-2025  11:44    <DIR>          .
+28-05-2025  11:31    <DIR>          00
+28-05-2025  07:44    <DIR>          01
+28-05-2025  07:44    <DIR>          02
+28-05-2025  11:22    <DIR>          03
+28-05-2025  08:44    <DIR>          04
+28-05-2025  07:44    <DIR>          05
+28-05-2025  07:44    <DIR>          06
+28-05-2025  07:44    <DIR>          07
+28-05-2025  07:44    <DIR>          08
+28-05-2025  07:44    <DIR>          09
+28-05-2025  07:44    <DIR>          0b
+28-05-2025  07:44    <DIR>          0c
+28-05-2025  09:49    <DIR>          0d
+28-05-2025  07:44    <DIR>          0e
+28-05-2025  07:44    <DIR>          0f
+28-05-2025  11:22    <DIR>          10
+28-05-2025  07:44    <DIR>          11
+28-05-2025  11:44    <DIR>          12
+28-05-2025  07:44    <DIR>          13
+28-05-2025  08:43    <DIR>          14
+28-05-2025  07:44    <DIR>          15
+28-05-2025  07:44    <DIR>          16
+28-05-2025  07:44    <DIR>          18
+28-05-2025  08:44    <DIR>          19
+28-05-2025  07:44    <DIR>          1a
+28-05-2025  08:54    <DIR>          1b
+28-05-2025  07:44    <DIR>          1c
+28-05-2025  11:15    <DIR>          1d
+28-05-2025  11:21    <DIR>          1f
+28-05-2025  07:44    <DIR>          20
+28-05-2025  11:21    <DIR>          23
+28-05-2025  07:44    <DIR>          24
+28-05-2025  10:54    <DIR>          25
+28-05-2025  07:44    <DIR>          26
+28-05-2025  07:44    <DIR>          27
+28-05-2025  07:44    <DIR>          28
+28-05-2025  07:44    <DIR>          29
+28-05-2025  10:49    <DIR>          2a
+28-05-2025  07:44    <DIR>          2b
+28-05-2025  09:49    <DIR>          2c
+28-05-2025  07:44    <DIR>          2d
+28-05-2025  07:44    <DIR>          2e
+28-05-2025  07:44    <DIR>          2f
+28-05-2025  08:44    <DIR>          30
+28-05-2025  07:44    <DIR>          32
+28-05-2025  07:44    <DIR>          33
+28-05-2025  08:43    <DIR>          34
+28-05-2025  07:44    <DIR>          35
+28-05-2025  07:44    <DIR>          36
+28-05-2025  07:44    <DIR>          37
+28-05-2025  07:44    <DIR>          39
+28-05-2025  07:44    <DIR>          3a
+28-05-2025  09:48    <DIR>          3b
+28-05-2025  07:44    <DIR>          3c
+28-05-2025  07:44    <DIR>          3d
+28-05-2025  07:44    <DIR>          3e
+28-05-2025  07:44    <DIR>          3f
+28-05-2025  07:44    <DIR>          40
+28-05-2025  07:44    <DIR>          41
+28-05-2025  07:44    <DIR>          42
+28-05-2025  09:24    <DIR>          43
+28-05-2025  07:44    <DIR>          44
+28-05-2025  07:44    <DIR>          45
+28-05-2025  09:33    <DIR>          46
+28-05-2025  11:15    <DIR>          47
+28-05-2025  11:44    <DIR>          48
+28-05-2025  07:44    <DIR>          4a
+28-05-2025  11:31    <DIR>          4b
+28-05-2025  07:44    <DIR>          4c
+28-05-2025  07:44    <DIR>          4d
+28-05-2025  07:44    <DIR>          4e
+28-05-2025  07:44    <DIR>          4f
+28-05-2025  07:44    <DIR>          50
+28-05-2025  07:44    <DIR>          51
+28-05-2025  08:59    <DIR>          52
+28-05-2025  07:44    <DIR>          53
+28-05-2025  07:44    <DIR>          54
+28-05-2025  11:31    <DIR>          55
+28-05-2025  08:59    <DIR>          56
+28-05-2025  09:25    <DIR>          57
+28-05-2025  07:44    <DIR>          58
+28-05-2025  09:20    <DIR>          59
+28-05-2025  07:44    <DIR>          5a
+28-05-2025  07:44    <DIR>          5b
+28-05-2025  07:44    <DIR>          5c
+28-05-2025  07:44    <DIR>          5d
+28-05-2025  07:44    <DIR>          5f
+28-05-2025  07:44    <DIR>          60
+28-05-2025  07:44    <DIR>          61
+28-05-2025  08:59    <DIR>          62
+28-05-2025  07:44    <DIR>          63
+28-05-2025  07:44    <DIR>          64
+28-05-2025  07:44    <DIR>          65
+28-05-2025  08:59    <DIR>          66
+28-05-2025  07:44    <DIR>          67
+28-05-2025  09:49    <DIR>          68
+28-05-2025  08:44    <DIR>          69
+28-05-2025  10:54    <DIR>          6a
+28-05-2025  07:44    <DIR>          6b
+28-05-2025  07:44    <DIR>          6c
+28-05-2025  07:44    <DIR>          6d
+28-05-2025  08:37    <DIR>          6e
+28-05-2025  07:44    <DIR>          6f
+28-05-2025  07:44    <DIR>          70
+28-05-2025  07:44    <DIR>          71
+28-05-2025  07:44    <DIR>          72
+28-05-2025  07:44    <DIR>          73
+28-05-2025  07:44    <DIR>          74
+28-05-2025  09:49    <DIR>          75
+28-05-2025  07:44    <DIR>          77
+28-05-2025  07:44    <DIR>          78
+28-05-2025  07:44    <DIR>          79
+28-05-2025  11:21    <DIR>          7a
+28-05-2025  09:20    <DIR>          7b
+28-05-2025  08:44    <DIR>          7d
+28-05-2025  07:44    <DIR>          7e
+28-05-2025  07:44    <DIR>          7f
+28-05-2025  07:44    <DIR>          80
+28-05-2025  09:20    <DIR>          81
+28-05-2025  07:44    <DIR>          82
+28-05-2025  10:01    <DIR>          84
+28-05-2025  07:44    <DIR>          85
+28-05-2025  09:48    <DIR>          86
+28-05-2025  09:24    <DIR>          87
+28-05-2025  07:44    <DIR>          88
+28-05-2025  07:44    <DIR>          89
+28-05-2025  07:44    <DIR>          8a
+28-05-2025  07:44    <DIR>          8b
+28-05-2025  11:44    <DIR>          8d
+28-05-2025  07:44    <DIR>          8e
+28-05-2025  09:49    <DIR>          8f
+28-05-2025  07:44    <DIR>          90
+28-05-2025  07:44    <DIR>          91
+28-05-2025  07:44    <DIR>          92
+28-05-2025  07:44    <DIR>          93
+28-05-2025  09:51    <DIR>          94
+28-05-2025  07:44    <DIR>          95
+28-05-2025  08:37    <DIR>          96
+28-05-2025  07:44    <DIR>          97
+28-05-2025  08:59    <DIR>          98
+28-05-2025  07:44    <DIR>          99
+28-05-2025  07:44    <DIR>          9a
+28-05-2025  07:44    <DIR>          9b
+28-05-2025  11:31    <DIR>          9c
+28-05-2025  07:44    <DIR>          9d
+28-05-2025  10:54    <DIR>          9e
+28-05-2025  07:44    <DIR>          9f
+28-05-2025  07:44    <DIR>          a0
+28-05-2025  07:44    <DIR>          a1
+28-05-2025  07:44    <DIR>          a2
+28-05-2025  08:59    <DIR>          a3
+28-05-2025  07:44    <DIR>          a4
+28-05-2025  07:44    <DIR>          a5
+28-05-2025  10:06    <DIR>          a6
+28-05-2025  07:44    <DIR>          a7
+28-05-2025  09:24    <DIR>          a8
+28-05-2025  07:44    <DIR>          aa
+28-05-2025  07:44    <DIR>          ab
+28-05-2025  07:44    <DIR>          ac
+28-05-2025  07:44    <DIR>          ad
+28-05-2025  07:44    <DIR>          ae
+28-05-2025  07:44    <DIR>          af
+28-05-2025  08:37    <DIR>          b0
+28-05-2025  07:44    <DIR>          b1
+28-05-2025  07:44    <DIR>          b2
+28-05-2025  07:44    <DIR>          b3
+28-05-2025  07:46    <DIR>          b4
+28-05-2025  07:44    <DIR>          b5
+28-05-2025  07:44    <DIR>          b6
+28-05-2025  07:44    <DIR>          b7
+28-05-2025  07:44    <DIR>          b8
+28-05-2025  07:44    <DIR>          b9
+28-05-2025  08:23    <DIR>          ba
+28-05-2025  07:44    <DIR>          bb
+28-05-2025  09:25    <DIR>          bd
+28-05-2025  08:44    <DIR>          be
+28-05-2025  07:44    <DIR>          bf
+28-05-2025  10:54    <DIR>          c0
+28-05-2025  09:51    <DIR>          c1
+28-05-2025  07:44    <DIR>          c2
+28-05-2025  07:44    <DIR>          c3
+28-05-2025  07:44    <DIR>          c4
+28-05-2025  07:44    <DIR>          c5
+28-05-2025  08:59    <DIR>          c6
+28-05-2025  11:21    <DIR>          c7
+28-05-2025  07:44    <DIR>          c8
+28-05-2025  07:44    <DIR>          c9
+28-05-2025  07:44    <DIR>          ca
+28-05-2025  07:44    <DIR>          cb
+28-05-2025  08:59    <DIR>          cc
+28-05-2025  07:44    <DIR>          cd
+28-05-2025  10:04    <DIR>          ce
+28-05-2025  07:44    <DIR>          cf
+28-05-2025  07:44    <DIR>          d0
+28-05-2025  10:49    <DIR>          d1
+28-05-2025  07:44    <DIR>          d2
+28-05-2025  07:44    <DIR>          d3
+28-05-2025  07:44    <DIR>          d4
+28-05-2025  07:44    <DIR>          d5
+28-05-2025  07:44    <DIR>          d6
+28-05-2025  07:44    <DIR>          d7
+28-05-2025  09:20    <DIR>          d8
+28-05-2025  07:44    <DIR>          d9
+28-05-2025  07:44    <DIR>          da
+28-05-2025  09:41    <DIR>          db
+28-05-2025  07:44    <DIR>          dc
+28-05-2025  07:44    <DIR>          dd
+28-05-2025  11:44    <DIR>          de
+28-05-2025  07:44    <DIR>          df
+28-05-2025  07:44    <DIR>          e0
+28-05-2025  07:44    <DIR>          e1
+28-05-2025  07:44    <DIR>          e2
+28-05-2025  10:49    <DIR>          e3
+28-05-2025  07:44    <DIR>          e4
+28-05-2025  10:04    <DIR>          e5
+28-05-2025  07:44    <DIR>          e6
+28-05-2025  07:44    <DIR>          e7
+28-05-2025  07:44    <DIR>          e8
+28-05-2025  07:44    <DIR>          e9
+28-05-2025  10:50    <DIR>          ea
+28-05-2025  07:44    <DIR>          eb
+28-05-2025  07:44    <DIR>          ec
+28-05-2025  07:44    <DIR>          ed
+28-05-2025  07:44    <DIR>          ee
+28-05-2025  11:15    <DIR>          ef
+28-05-2025  07:44    <DIR>          f0
+28-05-2025  07:44    <DIR>          f1
+28-05-2025  07:44    <DIR>          f2
+28-05-2025  07:44    <DIR>          f3
+28-05-2025  07:44    <DIR>          f4
+28-05-2025  07:44    <DIR>          f5
+28-05-2025  07:44    <DIR>          f6
+28-05-2025  07:44    <DIR>          f7
+28-05-2025  09:49    <DIR>          f8
+28-05-2025  09:33    <DIR>          f9
+28-05-2025  07:44    <DIR>          fa
+28-05-2025  09:41    <DIR>          fb
+28-05-2025  07:44    <DIR>          fc
+28-05-2025  07:44    <DIR>          fd
+28-05-2025  07:44    <DIR>          fe
+28-05-2025  09:51    <DIR>          ff
+28-05-2025  07:44    <DIR>          info
+28-05-2025  07:44    <DIR>          pack
+               0 archivos              0 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\00
+
+28-05-2025  11:31    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               178 0317329d1f22eb00c145cca4903ca07e861dfd
+28-05-2025  07:44               302 11e9d65fcaefeaccd7c79a0357e8f2214695ed
+28-05-2025  11:31                53 6bdbec6ef11b6fbf8f3d67c05324a63180c937
+28-05-2025  07:44             1.760 bdc038cb7c13f8462b70ee72f8bcf71a08d21e
+               4 archivos          2.293 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\01
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               987 c5ffa632971171f69bd06cf866d4a3be0db124
+               1 archivos            987 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\02
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               110 8b3ff1ce7490110b79ec5bf688abd66a8d86dc
+               1 archivos            110 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\03
+
+28-05-2025  11:22    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               659 14929078de8a733a0af9c8ba5bc00aca094cc9
+28-05-2025  07:44            32.603 3e3881b999d669a8ed99a259a8041c19c39d98
+28-05-2025  11:22               168 a60287ca4f745405356469c7a7bf582f99960b
+28-05-2025  09:41                55 a9dabf951392a387e35bfb57dd1e08088afbc3
+               4 archivos         33.485 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\04
+
+28-05-2025  08:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               999 a40367751ee4c064ac88045e79b17ba4aab0a6
+28-05-2025  07:44               116 c0f57940cd107010a0f5a2fefb9c04b8afba52
+28-05-2025  07:44               257 c2536035a34162814754c8c4d547b2f48fdf36
+28-05-2025  08:54               298 cf422a60ebe0b274519ab6fee8352a6d09aaa2
+28-05-2025  07:44               294 cf87e66ed8daa00712b7926d2ed63a9108c2ae
+               5 archivos          1.964 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\05
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               657 006a51eb888282323883df740cd90ad72d0700
+28-05-2025  07:44             7.643 77bf0b82aed8e0dcb43ccfc3bd27dfda32a456
+28-05-2025  07:44             1.277 db90c6528a30f87a210b6c01603c40a29382aa
+               3 archivos          9.577 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\06
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               714 166077be4d1f620d89b9eb33c76d89e75857da
+28-05-2025  07:44               161 4249bd687b2c8a3af64b35deba1f23babed3ec
+28-05-2025  07:44                56 69b970b1e2362f8a2133e818e5fcb281eb60f3
+28-05-2025  07:44             1.174 7627354b768e180e286f8c2efdb0c35a188e52
+28-05-2025  07:44               277 79afdfa78bffebe91fda3023491bba375b53a6
+               5 archivos          2.382 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\07
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               720 51cb10e94972be9a07b44cc261447bac726a7f
+               1 archivos            720 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\08
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               183 c206f3c793b4167e80ae2187cb2312f38dc534
+28-05-2025  07:44                53 ff36f7dce8bb3c41fecfbaf63f0a59305d2735
+               2 archivos            236 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\09
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44            36.652 00269439df2ae29b2412b70c26ebf7e4134fb8
+28-05-2025  07:44                78 30c565850326810b8efe09ca98895aeffd8f21
+28-05-2025  07:44               102 e7c70e6e9d78790d5fca1029eb13803e0b872d
+28-05-2025  07:44            16.650 f181f92900af76fb2f7274d8c6ef0bcd9fa3b8
+               4 archivos         53.482 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\0b
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             4.161 6d478b691a0189fa09a1f53fe591c093306ae9
+               1 archivos          4.161 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\0c
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               237 7280c3d8a9a65543da4d2625cf2ce2fbf501e4
+               1 archivos            237 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\0d
+
+28-05-2025  09:49    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  10:01               308 25777a4ee741c7bf8aba624d53aa4ed3c46ac2
+               1 archivos            308 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\0e
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             2.032 27da6dcf000be37fe0637ace6de10ee74a160c
+28-05-2025  07:44               201 4633b951b124338106c4101e1d88dc6e72230a
+               2 archivos          2.233 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\0f
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.485 90a5dc0f5f107d65a4b8d3f79711b8b1d5a6f7
+28-05-2025  07:44             1.038 c20252513be596e4e9f9a9f30096344c8a8546
+               2 archivos          2.523 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\10
+
+28-05-2025  11:22    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  11:22               339 2c752b811d7f48f4acc1de0c2e074cca9469ee
+28-05-2025  08:44               298 32c4bb74159539f54f2342f9ff9ff714f788f1
+28-05-2025  07:44            24.839 330cf8a7fa8a06ea8f5f6ed2088b715990cbd3
+               3 archivos         25.476 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\11
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               295 4367e5fbf144ad085f0fbe8081ad8adb101dcb
+28-05-2025  07:44               255 6c72f293ffcc22852ed5e0e0a611cdd837bc84
+               2 archivos            550 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\12
+
+28-05-2025  11:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  10:01               126 18d2d53401ed291692f1daf5deb8beaeecfaf7
+28-05-2025  07:44             1.363 5f097f35818ba9bb6ca9f13f693909e6034097
+28-05-2025  07:44             1.117 7056872b176894b745b692045dec13823f9c1f
+28-05-2025  11:44                53 bd54a53b20921587feba14132c8d1f98b8948a
+28-05-2025  07:44               634 dd7d867a1bbe41850eb1ef8055a619f3cdbfb3
+               5 archivos          3.293 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\13
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               323 479cb25c51019fd108f0de04886d6643daac5b
+28-05-2025  07:44                88 935a8ccf78a105bc508e4c8f88b9888f57f1b1
+               2 archivos            411 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\14
+
+28-05-2025  08:43    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                34 ad9c699397bcc9818453c0b1b07996c1f6ee41
+28-05-2025  08:43               207 f63ab0b4c129699adb4cd735f9f8240c20a6ee
+               2 archivos            241 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\15
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               589 6e7856360bf532de1d82080e425573e9b2d749
+28-05-2025  07:44                52 be277722ad1ed72cc8855eeebee6bcb610c17f
+28-05-2025  07:44                49 e93df350fb6b8552c6ba89289966a8b998064e
+               3 archivos            690 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\16
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               128 bfdfe2bb855afb2772294bba83b0cb5a622ee3
+               1 archivos            128 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\18
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               168 26526e091b89c896e7099ccd891db79165e329
+28-05-2025  07:44                62 7a8630cf670105eb82699710ff88a6c8b9a15d
+28-05-2025  07:44            25.823 b35274e1f6477c19d284017b76f8e6dcc0cd9a
+               3 archivos         26.053 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\19
+
+28-05-2025  08:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  08:44               206 15872aba613605f9e05d362e5942676b904474
+28-05-2025  07:44               296 bbddf20ff13a1e4cdc8117f2375878f82062ac
+               2 archivos            502 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\1a
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               384 29024ea215a7eefa9e372a75ac2d9c1b9e2abb
+               1 archivos            384 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\1b
+
+28-05-2025  08:54    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             3.571 4c9c74a5d2cee9f9569a289ce6f472b019f431
+28-05-2025  07:44                53 53c3aa3f3f3d22e9a9e8aabe2228d2060da301
+28-05-2025  07:44               424 6ba12b83c0bb3f02cebd2b424079e63d309231
+28-05-2025  07:44                83 dc2f9263090cff1758b764deddbabbfb1eb26b
+28-05-2025  08:54               169 ea9e4671f15411587e4a66d7314a1d576696ae
+               5 archivos          4.300 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\1c
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               838 dc89ed4925c800751b44108a2e78305224d07c
+               1 archivos            838 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\1d
+
+28-05-2025  11:15    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               100 21a8aefa405581c2fe7e1a1e28bde05a45f1cc
+28-05-2025  07:44                81 33cef45ac4212d8710fa253075ca7969c5cd81
+28-05-2025  07:44             1.281 38da67b5e616efcc907ce65a5b397f559765fe
+28-05-2025  11:15               204 7eb85470ab3dff8df8d486e3ebf282c7d22db2
+               4 archivos          1.666 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\1f
+
+28-05-2025  11:21    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                50 6e11b3d0e95337b67b81b962b4c6abe69ed7ae
+28-05-2025  07:44                89 73cb725de8e34af3ce6bdd9bc9315604ca5599
+28-05-2025  11:21                87 a10e0a4453ce336bd3bd1aacff94f409754944
+28-05-2025  07:44               183 f027721aabcada7c00b9e69fbd6f99a901c470
+               4 archivos            409 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\20
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.375 02ce5a53532769b9b5bc561dac11518c384d13
+28-05-2025  07:44               180 1e859be230a5390ae41935c6f8d5f2ab1dbb5f
+28-05-2025  07:44                88 44fe03646a725081f95460e4fca9a1ef59750f
+28-05-2025  07:44               774 4a9e904b4ea5d092d53f9b9bb77301bfda559e
+28-05-2025  07:44             5.746 9bc537b0404510c24d846d2a93098c8cc2f3fd
+28-05-2025  07:44               285 a721c445a21b60d9d3a20d142da608bffd7d9b
+28-05-2025  07:44               365 f14672206042d2951533611e875fc4f776305c
+               7 archivos          8.813 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\23
+
+28-05-2025  11:21    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               342 5fb79a2521611644ab093c3d739c8d90617818
+28-05-2025  07:44                81 88fe073e3b830f05169d685566e8283d7f3805
+28-05-2025  11:21               193 8c14467851b1ad07cdf91c23a01c9bdf9d0214
+               3 archivos            616 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\24
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               295 166b61f4f86db68d3d0e61c1cc7c66ed120975
+28-05-2025  07:44                58 406ed067deb8fda15daa970cafc9a580ab3181
+28-05-2025  07:44               831 849428bae69540a59077dd4d6b3d15ab7b097b
+               3 archivos          1.184 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\25
+
+28-05-2025  10:54    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  10:54               370 28e3ca8e9e501c9f84228fde78947da12f80af
+28-05-2025  07:44               441 3f1838ef01e519179515bdec086f97d2bed7c0
+28-05-2025  07:44             1.410 4ef6a2b422e250e77eac62d264a5b3fa005e21
+28-05-2025  07:44             2.289 bfc802b66fa8d75ab0d1e8f88da8afa2aa4b3e
+               4 archivos          4.510 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\26
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               129 12ed8fefad45d3a68ae842a28e0353ebcb5cf1
+               1 archivos            129 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\27
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               411 2b8dd6b38c4a99f66a30a0c9ac2ab39331fa9b
+28-05-2025  07:44               778 39eb1f75fbfb19c96bbd78c10962cae62143a4
+28-05-2025  07:44             1.009 7c3e5a6407b8d4440961dfa8ea1fed19ff9f5c
+28-05-2025  07:44             8.159 d977a25f9011fc31ed28c17ba11f729b85edea
+28-05-2025  07:44                53 fff44851d0cf9d449218718fa7d0b4b3fc279d
+               5 archivos         10.410 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\28
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.232 00d82ee95adc167f10e116c573e5d059eee483
+28-05-2025  07:44             1.158 28e736c2c67960628ff7ad82e69bb778f2242c
+28-05-2025  07:44            14.955 63dd9c318754a77c6bfb57ec5e7db8759abd8b
+28-05-2025  07:44               184 b657d22559107c5fffcc946252fd34996d1570
+               4 archivos         17.529 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\29
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                79 2cb827153b6dd5483406bf937d78db8130fa0b
+28-05-2025  07:44               797 5e9e9bc5fb9a2c1667c0dcd23876b263ee7903
+               2 archivos            876 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\2a
+
+28-05-2025  10:49    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  10:49               308 0958cf2993d5fed37c23d62e561c4c235e99e7
+28-05-2025  09:51               307 69a1cbe8ff525046893d16ea86665c07b94c0e
+28-05-2025  07:44               314 a0d48877e45a58bf4b421ff7a110f529dbd0a0
+               3 archivos            929 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\2b
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.115 0a980fbd767e2c3ac910e34158964e7dcdbf2c
+28-05-2025  07:44            25.278 252bfbdab57c61bd77c10752b095e365aebfbc
+28-05-2025  07:44             6.067 5dff02a08d61e3ecaf660620fc8a8bbadc35ed
+28-05-2025  07:44               164 99a7da025f57138b7bc98245ac032425655f25
+               4 archivos         32.624 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\2c
+
+28-05-2025  09:49    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               111 021f304e712d18e77b08d5dd9f87d0bc241021
+28-05-2025  09:49                53 ce71426ae1e46686cb66df055db79012f9b28b
+               2 archivos            164 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\2d
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               140 9a66a8acdbacede413918d9c0c8eaaacee7457
+               1 archivos            140 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\2e
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.691 decce2f0fa5adcc88ebc609440221621048c05
+               1 archivos          1.691 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\2f
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             5.881 444da66cfecaeb78ba0028488781436011f4fb
+28-05-2025  07:44               322 6dab4c10431239352ab4626e326bf4e97cad5c
+28-05-2025  07:44                53 7f2fa28822113957adab0b2b7e9f494070505a
+               3 archivos          6.256 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\30
+
+28-05-2025  08:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  08:44               207 0d5c85a735773224029d15c1f8297a696d9f88
+28-05-2025  07:44             2.354 130747622f34445aa0196c062b4f399401f1a3
+28-05-2025  07:44               378 50bd64df3a2cd9ddca1a4206fc990b57c282ec
+               3 archivos          2.939 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\32
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               119 2542d66756a763a33427610daa398606cb0c61
+28-05-2025  07:44             1.963 6cfa4f8cfb1e3945832d4e527b0d7c59981145
+28-05-2025  07:44               749 c14b846848a5627421f0fb4fb3108ad5183d76
+28-05-2025  07:44               385 e3acbdaad49915d5b6f7306daf2de31ad3391a
+               4 archivos          3.216 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\33
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                52 535a9219b75d58aaf9b20e627f4bbe54b37d5d
+28-05-2025  07:44             7.417 8972e78e9481dbe538e09d555ee7eea35711fd
+28-05-2025  07:44               813 905f0fc92c406715fef234ba43605c95390b30
+28-05-2025  07:44             1.267 f3f14d1bfa3ea01bcd600b1a1cbe2aa2494603
+               4 archivos          9.549 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\34
+
+28-05-2025  08:43    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             4.976 79d18c0b26126e58774ec9284b1d56a9032ca3
+28-05-2025  07:44               658 995e79d1528aaceca7d38f323df52514ba7d0f
+28-05-2025  07:44               165 e60591349679d8cbdb1033a60eb5d171d7637e
+28-05-2025  08:59               400 f4b8ec9b8b14a8289ecc611a2258ed5f0c290c
+               4 archivos          6.199 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\35
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.108 0aace2bb387149c06bd59599b6ac39fc7850ab
+28-05-2025  07:44               286 2129ca356c8ce4ba2e5e6b78c092f401e0f2da
+28-05-2025  07:44               267 2bfdabd228c58a83d22f1d739a33d5e0b0cf0f
+28-05-2025  07:44               365 979cf023956566c0f67ea85a884de10ff0d1d7
+28-05-2025  07:44            22.660 aad75e9a9b0f526343fa2402ef137b5a4341f3
+               5 archivos         24.686 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\36
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             2.501 57890a186b14bf37ed8817d28a9a6a20bd397f
+               1 archivos          2.501 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\37
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               299 4166d37bc336d221095d9d3ca1cbde9cadd695
+28-05-2025  07:44                56 b11eac5e47d1cb657f8106cba8ef75955e8855
+               2 archivos            355 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\39
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               465 e709aaf69a2c3ce2c173b8d908d5ffb6a175f5
+               1 archivos            465 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\3a
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                67 12e8642651dc11e02842be181311761562f318
+28-05-2025  07:44            64.457 2fba658569f4841df0048a63c58d889fe6b491
+28-05-2025  07:44               491 71c2dda9c254a95560f663c2666044161edde4
+28-05-2025  07:44             1.081 a0bba4037e57211920a2cf8b57194b61eb24d9
+               4 archivos         66.096 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\3b
+
+28-05-2025  09:48    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               500 3c6662f68d2416a0061109af76640869edb130
+28-05-2025  09:48               308 44751a03746b02774c6fecef3bdf272cf0daae
+28-05-2025  07:44                56 5d9e90ec405f85dd7f9066656efccc51193697
+28-05-2025  07:44               110 b6b9609889f8131b2d6732ff1606e01e1365b2
+               4 archivos            974 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\3c
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               480 50344d8515f80a01d21bf7bc61cadf363e24cd
+28-05-2025  07:44                86 a85344fc7eac2b4cfd37c3d9b5c35c33664019
+               2 archivos            566 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\3d
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               123 03caa695a5dd65a5aebbd2819621e757bda420
+28-05-2025  07:44             1.078 47e755d7bdfc37073a8f233f85112d6f5dfb7c
+28-05-2025  07:44               239 9e727d70a46a2c3a8c43d1cd2a5beeb60793eb
+28-05-2025  07:44               525 a92ff02055dda7da2a8997b0b9c4f851355d98
+28-05-2025  07:44               434 e89c47291b403fa38a8340c11d4db0eb99c751
+               5 archivos          2.399 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\3e
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             5.431 4c2d9a43df6811605eacbd59da998902eae99f
+28-05-2025  07:44               116 d44572292eefe6c60ff6be0df8a1112c66bea5
+28-05-2025  07:44                48 d459b2ca9dcad01e45a17a56f214903b9c8bbc
+               3 archivos          5.595 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\3f
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               286 319109f75916982793e93a62916a3de7a05cfc
+               1 archivos            286 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\40
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               479 0341dddc06f7138b76fe3b3275a7992b3c8ead
+               1 archivos            479 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\41
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.272 4007121ee2f96c31b6ec1ff7d86bff1e56441c
+28-05-2025  07:44               249 e44fc676bb315acb2f901d154200bc3862f275
+               2 archivos          1.521 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\42
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                56 3bc521defb0dee3a1ad100057f60596253a3ee
+28-05-2025  07:44                84 731eadab1b6ff37f468eab329685d9dcbb959d
+               2 archivos            140 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\43
+
+28-05-2025  09:24    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               354 0b705aca13c9c40f62066a3cb4815faacbd4ed
+28-05-2025  07:44             1.750 47a7fc5414b183a302f73aabe9b6a70d263e29
+28-05-2025  09:47                52 71ef311b38d41000efb79e3cdd86bf48c2dcd9
+28-05-2025  07:44                76 bee3bc93c9929d5ea7b88eb5d1bc16bcd4ad5c
+               4 archivos          2.232 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\44
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               274 45451fbe2ccd00617f2848e567afb5eecb6825
+28-05-2025  07:44               604 45ec33bdc04efafffec18241c2e466f5803ed3
+28-05-2025  07:44               899 7695b2e1220bea0ee1572544a47ccb864e69c0
+28-05-2025  07:44               745 b80a2d4f5685511a02eee7f6471630fe9af2b4
+28-05-2025  07:44             3.854 bc977e98497743ccb9da2a7e277b813ae7fcae
+               5 archivos          6.376 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\45
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               298 084d76bb5cbc6bd9d353133e6820b29758bd9c
+28-05-2025  07:44               491 093df984f8dd727ce524e14d0e61ab08aaa7ab
+28-05-2025  07:44               103 5f9454ee6483f450a3c7b2e4570a10d6e78d39
+               3 archivos            892 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\46
+
+28-05-2025  09:33    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               240 03badc3174d17cce7ba6b8f6e65a8884f57777
+28-05-2025  09:33               274 6f193b0a7146ff4368f81427bb926f77e7a0ea
+28-05-2025  07:44               186 8914ffe821b4e52abe6611dd3261b58c08a6c3
+28-05-2025  07:44               153 c77a56a27440495f88dad6bf18e214cb5772d0
+28-05-2025  07:44               132 f3b120b8724f7a62ece8975157c2df19e5f1b3
+               5 archivos            985 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\47
+
+28-05-2025  11:15    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  11:15             1.026 39057390267cdcc4c3165d0f6d5c51cb4bcf87
+28-05-2025  07:44               373 47a457672a59d2b18e17bbb0054f55adefce1b
+28-05-2025  07:44             1.106 fc92b7462400752e86c20a72da69e697401342
+               3 archivos          2.505 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\48
+
+28-05-2025  11:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               663 04b7ab411f5f72ff74343a88bc503ecc309033
+28-05-2025  11:44               339 6582af5d80ee244f81bc928100cc8fd9c46db0
+28-05-2025  07:44             1.415 d2fb477241e837c6e8d349777aac312746029b
+28-05-2025  07:44               656 f05d01d0acae75acada5bd42a3442d0699d067
+               4 archivos          3.073 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\4a
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               766 66dcf24e0b17dce66d4742994e726e5c45439a
+28-05-2025  07:44               166 98362baf165d9190ab6bc7b627daeaad6fac8c
+28-05-2025  07:44               328 c38450e67fbd8eb38e0a0c5d8f52320180ab83
+28-05-2025  07:44               239 e34193a1edf855caaf3fc3a3700230934379af
+               4 archivos          1.499 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\4b
+
+28-05-2025  11:31    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               243 1b9a56d1bba183cc75a616ece707489901d4a8
+28-05-2025  11:31               198 64e1690bd445361767ccd8d8c7f4ad58e69729
+               2 archivos            441 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\4c
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               415 33335766667761460cc464303e80efe0c6eb10
+               1 archivos            415 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\4d
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               151 35738dd502a7592a440668bd0e72a1542dd6c7
+28-05-2025  07:44             4.035 8df73276709cfccd163f275c40bd0b7f949fff
+               2 archivos          4.186 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\4e
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               153 c608b8169025f6f0c53c2eb8b0985c718a595a
+               1 archivos            153 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\4f
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               400 f7e9a4143ee9077ca901075d44a0ed1aec570d
+               1 archivos            400 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\50
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               738 af9480c6b38aaab62475fdd38a609cbd8fe56c
+               1 archivos            738 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\51
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               702 147d6569aa0f44c087b01b93ff2db52bd1b2b7
+28-05-2025  07:44               465 d008cc11c5cb2a50bfadd2dde680d71980bb77
+               2 archivos          1.167 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\52
+
+28-05-2025  08:59    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  08:59               813 0d830ffd35e9c117c753d4a6d1b625b19c0e02
+28-05-2025  07:44             2.759 1a676a8fdca56e38b9870843bb101f7d09e095
+28-05-2025  07:44               713 a3186e3c7d6f5495014818e0986c960b1a1d28
+               3 archivos          4.285 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\53
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               511 e93dc59e1f1ed10274ee870e46ecfad991073f
+               1 archivos            511 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\54
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               749 1516bd0f23194a87482e272f48439100b70c73
+28-05-2025  07:44                71 9dbd46e5a4c1df5f6d75e11e690d6dc8758421
+28-05-2025  07:44               674 dfac39d9f523b2c14548f4574076f587c767e2
+               3 archivos          1.494 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\55
+
+28-05-2025  11:31    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  11:31               339 a97c2419e95cb4abc67d869b392fe8209db837
+28-05-2025  07:44             8.237 f09b7ffe21daa5ce7211c671b4c13fac894a69
+28-05-2025  07:44            41.337 f25de1ee642cd7f708b30141c595cc4e769364
+               3 archivos         49.913 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\56
+
+28-05-2025  08:59    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  08:59                53 40759a027a3915b3f390c77bfc458f15e9ffe1
+28-05-2025  07:44            15.138 7ff5da58e83683bec0ea9e86221041ddf9435f
+28-05-2025  07:44               329 85a9dfe307be102639a9c61a8c02632b542c95
+               3 archivos         15.520 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\57
+
+28-05-2025  09:25    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                64 6fb51617719961375b38b15773244480b61a0e
+28-05-2025  07:44             1.219 b67b0720e157a08f18cedfb6f77fa8da2d294e
+28-05-2025  09:25               186 e28f07d6836aff79b8f4b26499d26285bfc9e4
+               3 archivos          1.469 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\58
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               484 081ce9372633cce609bf6783b7179212b5f32d
+28-05-2025  07:44               731 2cd454a3b3383854793340fde88c83130dea91
+28-05-2025  07:44               553 6022936c59d39d5cd280a281f4ffc6fad932f5
+28-05-2025  07:44               219 666ffeff7a07797209832abdc1fd10f6d9873a
+28-05-2025  07:44               146 6ec9647106eac9343adfe8d683db406205dde7
+28-05-2025  07:44                34 73c441e62a88335b478b30de3c2a319b945520
+               6 archivos          2.167 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\59
+
+28-05-2025  09:20    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               122 1c5eb444a779ffa85416ec5e7b2847512624cd
+28-05-2025  09:20               298 c205924553b45108fec1f5a9345d2f1b5614fb
+               2 archivos            420 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\5a
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               696 2ece252d1aaa7f2bc64e7eb958278a42c944dc
+28-05-2025  07:44               129 49992eafed9157e55fe5cf18a1eae8da8300fa
+28-05-2025  07:44                85 4a7c7149a79f113c536e08888acc70213674e8
+28-05-2025  07:44             1.866 8fcfe4d0d813c4608765b31342fe5297e5867f
+28-05-2025  07:44               374 f7cf6acb5a0649834b2142c3c0d9b09e3cd709
+               5 archivos          3.150 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\5b
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               151 d07cbccb067d217aa3ef50bee3ec6f88667a7f
+28-05-2025  07:44               986 d74f74e66614ff979f668d466c7e9351f834ff
+               2 archivos          1.137 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\5c
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               306 41e37227a6b5cd3ade44a3dff7631bc4ad2ef9
+28-05-2025  07:44               755 5eb5798a8af50ef9491ab8f0ef08430bf42122
+               2 archivos          1.061 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\5d
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               190 05336b487766acbfc234a46850a05889cba97e
+28-05-2025  07:44               795 2839a590b2bac46489909265bc3010fdc62b28
+28-05-2025  07:44               361 2929f7a67750caca25e51ed80ced22c3f43e64
+               3 archivos          1.346 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\5f
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                89 5fddeec53b514df79342efce6cae341b6309be
+28-05-2025  07:44               977 60cc0992cbae4f34123dedce058743617a842c
+28-05-2025  07:44             4.975 f046adaf0558013160150262f07e6e4d1df38b
+28-05-2025  07:44               290 ff612b56dbf8c88d7d5220a422b8cbc19e073f
+               4 archivos          6.331 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\60
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                84 12247c464a88a37c8711b0c40884ec8c8e182d
+28-05-2025  07:44               683 7eafea56cb060292269b11c9809777c11abf62
+28-05-2025  07:44               619 85b6e84dbc760b9aa2fee924ef3bcb87989e93
+28-05-2025  07:44               118 fb90e45970d491a68e6db8c72fcc531d13a44e
+               4 archivos          1.504 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\61
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                58 4c942bcb66a11f6d8149b2e35e5b7fc4a7a40d
+28-05-2025  07:44               312 65fb0f735882b37c0d9674594b9f1cef3df5a9
+28-05-2025  07:44               126 6cef0feca4fb785c474ed6e20e79adf5900af7
+28-05-2025  07:44               961 8596389779061eb7f6f34edc61add4a517ca4f
+28-05-2025  07:44               501 a54f189ad93716226e80373a71a41c63e8743c
+               5 archivos          1.958 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\62
+
+28-05-2025  08:59    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               127 84f62aa568e0c3e6d0645afde28ff5e777ab31
+28-05-2025  07:44            11.296 93fe3ea407348cf5d71f8115adc943e39c2abf
+28-05-2025  08:59               177 c7015772bf6bbda9d1668bd851d774ef25a0f9
+28-05-2025  07:44               642 d6d237ff179b118746a64a34967f7ff4b5dff8
+               4 archivos         12.242 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\63
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.783 23c6574bbeb0a7be02c1f091a63bb08a40be80
+28-05-2025  07:44               189 f215db6d6f3c9cd3d5530d79e932ae2b4f3118
+               2 archivos          1.972 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\64
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               207 a05f94bdbc1ee45a0cb091d3fc670fad3ba2c1
+               1 archivos            207 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\65
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.590 5c47b69741fc80e6da8c435594165299f034ed
+               1 archivos          1.590 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\66
+
+28-05-2025  08:59    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               661 0ffecb58b02f27a562c193c71f14b7b573fc96
+28-05-2025  07:44               185 222289d9281adc245ee30a6a1bc5353e5b54b4
+28-05-2025  07:44               675 57a9d2dd24a677bc4ac16abe0115c4d358c76c
+28-05-2025  09:51               124 66852b008bdb250da14bd172781d0605e04619
+28-05-2025  07:44            31.030 82448131d2cea89fe6c4c9e970786546a8189d
+28-05-2025  07:44               847 a2cb800239b52fded1d03a2747967f17c92251
+               6 archivos         33.522 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\67
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             2.576 445815fcf207fb7e52845f8d14831df925ffd8
+28-05-2025  07:44               838 a5e929dfce41c47370c4141ed9fae8ba6aea21
+               2 archivos          3.414 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\68
+
+28-05-2025  09:49    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  09:56               307 aaf908c6b5f02a3382c5a05753a6066088b1b5
+28-05-2025  07:44               458 f1118959527677cafe8c28547ec68d1ffd1605
+28-05-2025  07:44            15.189 fc249d07ac4e4894374a21f0b00bafa9201819
+               3 archivos         15.954 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\69
+
+28-05-2025  08:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                53 5e356174a86759d476ae3c4098206580076fbd
+28-05-2025  07:44               339 82b6da17561e86b110f0c8eb7add66b9180e7b
+28-05-2025  08:44               817 8809efd1bd540ff2dc5c8051be72653f06ab63
+28-05-2025  07:44                58 b7ea2fd1772d3c35d4b8297c0e2a94da61f20d
+28-05-2025  07:44                61 bdbc92ee1c2272f4ea3180319378f4c9ffb94c
+               5 archivos          1.328 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\6a
+
+28-05-2025  10:54    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                68 0c53c5b9ed0ecc1d4130caf9f61f6bdfcb2fd4
+28-05-2025  10:54               341 834702e576b1b64fa1a11983166dca1bd44e77
+28-05-2025  08:43               208 882f41e3589233a09b296bf71892da4ab6f36d
+28-05-2025  07:44               257 92aa1528faae53711bbd36beda1319154334ef
+28-05-2025  07:44               656 bfe1434ebd5c15c245b9f0a7c25e36b581df19
+28-05-2025  07:44                56 c1a564c350bd08792065b5bcde03ddca511e13
+               6 archivos          1.586 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\6b
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                81 2ae764c54541ae224d93bb49e8f176260601b6
+28-05-2025  07:44               551 6b49c7734d884e49f33256602bf2cb755d839e
+               2 archivos            632 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\6c
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                79 506c48aad7d0c1a59cfb15d924df547b78e7c0
+28-05-2025  10:49               123 6f4ceadc635c5b8962b24ab7b4a6a238c3e129
+28-05-2025  07:44               281 d949a6777137da8128895053b743915ac7d067
+               3 archivos            483 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\6d
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               830 1f64b0e59a4ba387984ec11c3d056a7deec047
+28-05-2025  07:44                83 61bffd3ae8087b2208ab3fc3923837e4929962
+28-05-2025  07:44                87 aae331f18e427d1057c96c8ca75d6c6c3fd211
+28-05-2025  07:44               181 e748e8e263c24a3b10d818eef33025fe222e6d
+               4 archivos          1.181 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\6e
+
+28-05-2025  08:37    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  08:37                53 b5ac3600ee0d552bcf5cacd0ad315972cbc51e
+               1 archivos             53 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\6f
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               364 43453ade2de4499935b80e16d47d7c1406dd2f
+28-05-2025  07:44               606 491e18e675680e74d6161615c9b62c60879172
+               2 archivos            970 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\70
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                86 f394a85acc4ed7d2d78919d0d9503c0246322e
+               1 archivos             86 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\71
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               181 a054fd370a627af5171153377e7c78ba8937f9
+28-05-2025  07:44               532 ffdd0a1847cc4e0dc94574004a1ad7fa846a8b
+               2 archivos            713 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\72
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44            10.842 232c7a2cb8fead1050128bdc3812efa0e05766
+28-05-2025  07:44                87 5ccb61a96e9a89faa7d0046cfffb78e1c92539
+28-05-2025  07:44                60 899f40b1688342f6b995609fe13bac9e06fc04
+28-05-2025  07:44               147 8f95ce23ce69871cc896a6fd3aa389eae18d7e
+28-05-2025  07:44                90 b95830efb81734d02b70c24475be8d5dd40c9a
+28-05-2025  07:44            13.671 d68d9e1f1964ed9e87d895f518ecb45fb5d0c6
+               6 archivos         24.897 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\73
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.055 da248bbe692be7ae93a345279ddd50500a9291
+               1 archivos          1.055 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\74
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               704 2cbada545ef218c598a58dabd7014e1701cb60
+28-05-2025  07:44             3.491 36f64146e87d2ebe6cacac33af0aeedcc798fb
+28-05-2025  07:44               295 482195934a98d0ce03d92cdabbc8a36e647d6f
+28-05-2025  07:44               449 6d6e508266ac6fa68ee26d852d8d63ab3a15ca
+28-05-2025  07:44                62 e44517a24aef84b94ac86c298d0daaa19f0d49
+               5 archivos          5.001 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\75
+
+28-05-2025  09:49    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  09:49               814 4ecc3a978988215b9882360144fef47810f90e
+28-05-2025  07:44               349 dee4c36885766b2544db4541befe507824f133
+               2 archivos          1.163 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\77
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             7.535 a851f36ec0133c282f63e9c0d68604423b2c5c
+28-05-2025  07:44               161 bfa00702851e245eaca0b4bb197075e4afd9a9
+28-05-2025  07:44               315 cf1473a24f1f2d67414d52d123a415652fa2c0
+28-05-2025  07:44                56 e35050da80919ce2df458fb50de4b328affc28
+               4 archivos          8.067 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\78
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               359 226982041ce40c7ed2906b34d3cd13b880767a
+28-05-2025  07:44               673 4e56a09695adb47410cb6cf08e96334a9f9c1f
+28-05-2025  07:44               772 ad240f0afd80d9a632fc108ac482f7143615d2
+28-05-2025  07:44               992 c7207ef4d11bf6d9f11d673e45b09c706fe4a0
+               4 archivos          2.796 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\79
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               654 48bc02a7937478ae009ff3796e76b25bdfbb08
+               1 archivos            654 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\7a
+
+28-05-2025  11:21    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               297 450e70826f140f9e92de4b5bc6967db78eafca
+28-05-2025  07:44               102 8d8735752ef518698f1fe62b4edd16725898a8
+28-05-2025  07:44            21.687 a8b3eead4a902ab80801db1f546d90f3fb0b78
+28-05-2025  07:44               399 b214da3433e437bbd54ce422e389e88c01c1f7
+28-05-2025  07:44                82 d88193e1f3599ebce7e63ed97854895fe87f33
+28-05-2025  11:21               340 fe8cbc055ac8e4aec91f84d62d30e5e1c5a733
+               6 archivos         22.907 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\7b
+
+28-05-2025  09:20    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               952 16882e7502f81db2a4b5e434998b609d6aec53
+28-05-2025  08:44                52 339ac9a83e506d4f7040571c8141b0f31221f1
+28-05-2025  09:20               820 a647af3f523d7c007c7435f76ffdf1e1050599
+               3 archivos          1.824 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\7d
+
+28-05-2025  08:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               109 376c2580e9c6d9c76cef06623d9aff742cc31e
+28-05-2025  08:44             1.370 72502f9c618e9b62883f89a59432717866bb6f
+               2 archivos          1.479 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\7e
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               118 26c45734d7f5c3c431972dfd915744d3967fac
+28-05-2025  07:44               347 5747be023988fb560d4fc0098e82b8197df340
+28-05-2025  07:44            15.455 9140ae78457d492346c496bd4558c2fba9af42
+28-05-2025  07:44             2.083 94375ecdc2a3843b993c6d563b4dddf1af9fea
+28-05-2025  07:44            77.406 b098c6aa009a56d696f5fbaba3c9852ec95e18
+28-05-2025  07:44               334 df41840c9812acddef7ae6d9b513f98d3509cb
+               6 archivos         95.743 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\7f
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               316 1288a4ce9ae031b0778d38afe16dc477c59ab1
+28-05-2025  07:44             5.197 305358b00419e2d3fc0966af571d5263b7ba4d
+28-05-2025  07:44               447 930f4108c09221cee0035e38a51634eea63584
+28-05-2025  07:44               429 9b2781d6dd508bdbdb55794ec7e9ec83bc3f85
+28-05-2025  07:44            32.875 c1205d9441d59b9cc47043739549396260d504
+               5 archivos         39.264 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\80
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               161 9580dbd6a347bb63b22eb116a14e32bcd64cda
+28-05-2025  07:44                58 e3b3a3feeda388f1990ce3a31262872f174553
+               2 archivos            219 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\81
+
+28-05-2025  09:20    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  09:20                53 0d6faecbadc49dfd5cfe067629df12efe556ea
+28-05-2025  07:44               689 4c20b5a9e3c97f41dde308939b358f9ed93931
+               2 archivos            742 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\82
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               137 e4285adc6285693cd6c06af02d606e09dd8fcd
+               1 archivos            137 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\84
+
+28-05-2025  10:01    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               585 087c8067bbec11d87b96785186df990506c3dd
+28-05-2025  07:44             5.353 0fdcb04ead34525d912eb428bc21ce4e5c55c6
+28-05-2025  07:44               264 559ce7c8039363a0c08afc72590af0aa288979
+28-05-2025  07:44               429 cfed425ac6a7ec21b001d6f812140593797a7a
+28-05-2025  10:01               817 f443e5304e1d067854eb6b3db363d428dbb0b5
+               5 archivos          7.448 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\85
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.052 02e13dd5c835ead21cfc21ead0dbdce432f741
+               1 archivos          1.052 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\86
+
+28-05-2025  09:48    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               110 0ba21a1b9f97c2f5777ebd6bdcbd58bc5fb984
+28-05-2025  09:48               184 14a037daca345eb136ccce41601b44224ec992
+28-05-2025  07:44                93 2adb93c3df8de3c178325d090b7a5b1503274a
+28-05-2025  07:44             2.096 754bba08ef6a5614f002ccd52efa704eac9c25
+28-05-2025  07:44               272 8f4ff4876eb4b02fd44c608e135cf6462895e2
+               5 archivos          2.755 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\87
+
+28-05-2025  09:24    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               911 3f246daffc4b35773c208dba2d1be160b5a485
+28-05-2025  09:47               988 5a727c3e5a5a16237f2abd33a8f7edad341ea0
+28-05-2025  07:44                52 edb70c5dff350ead1767422a25013efca5d8e3
+28-05-2025  07:44             1.296 f5727fb65c35e7a75fe15464473ffc0455739b
+               4 archivos          3.247 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\88
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               372 0066edf4c86aaa805625228a0e09ff7eea447e
+               1 archivos            372 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\89
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44            70.665 cf19a74072fb71a9865e0efc6588ba56cdab3f
+               1 archivos         70.665 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\8a
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               295 1d7b0e9ebbefa9b3696bd5bdd36b2f1f245f30
+28-05-2025  07:44               137 56d5b72fb008043cc69939648790ef482cdab8
+               2 archivos            432 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\8b
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               250 6d2bff4ad41652396d53aaca5d49ce836a7118
+28-05-2025  07:44                62 dbfc8154dad2999f38aaba5a91257e668ad6ee
+               2 archivos            312 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\8d
+
+28-05-2025  11:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                72 0bf2435e7e4f5d6c01058b738243f6361b186b
+28-05-2025  11:44               187 560d13164ec93ea0fa38a2f24821091fdf6bf8
+28-05-2025  07:44             8.910 6cdeec425776c49ad0e1f4e92e17738ed4d6ab
+28-05-2025  07:44               823 bfacfea727f2486a51415fa63e8494689ca3ed
+               4 archivos          9.992 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\8e
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               233 191c6ef1521644b2bb0879f9f3e85ab7d21fd6
+28-05-2025  07:44               295 8da0dda153deb6bf1bfbb2c1a7e5e19aea08c5
+               2 archivos            528 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\8f
+
+28-05-2025  09:49    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                94 1b259e891c91ffec88e421665dcf65334c9a04
+28-05-2025  07:44               669 25097d09bd0a3dbb721a264d41c3234b9ae368
+28-05-2025  07:44               374 38635c303829054d280d24f78f96b52027ed9c
+28-05-2025  09:49               989 8b949d6ce2e5e9213ec877c5371493f41cfd50
+28-05-2025  07:44               891 c0dae1b3f6b0a22322a21b40b0f51665eadfb0
+               5 archivos          3.017 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\90
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               946 6ce60258445fcd24824eb23311587efa1b1d70
+28-05-2025  07:44               121 d5fe5d34db63dab6fbf5e1a39597b0331330da
+               2 archivos          1.067 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\91
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             7.740 f6763be29abb4064de5cc195db5c24440a8c2f
+               1 archivos          7.740 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\92
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.086 3b8be2f14c65e78fd75a4fd34aba94fb733274
+28-05-2025  07:44                36 65236f288b7da2345b73a3bc290a6385d2b356
+28-05-2025  07:44             7.170 743ebdd696f6d7577bf8fa9edb2f77177a4084
+               3 archivos          8.292 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\93
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               293 183ef5f0448585d4fe09742be017a2a1f857e9
+28-05-2025  07:44               204 2dcada4bd4f19dc190bbd6e0742bb84f76f5cf
+28-05-2025  07:44               153 4ee94ca8e80a71342b4d5ec34e73a202231f7a
+28-05-2025  07:44               146 b1ebab985462ba28ff12935e07052b7c96dd16
+               4 archivos            796 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\94
+
+28-05-2025  09:51    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  10:01               182 6bff5fbecb0f7640427e58c4cdadf87a79fde7
+28-05-2025  07:44            43.015 91c110512ce8288684cbbba0a147d8dc8c202b
+28-05-2025  07:44               290 a44a8e83ff69f9167af25ae71c238d0f07250e
+               3 archivos         43.487 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\95
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               692 d60081f502551c172a1a9d8696ac5743d0585f
+               1 archivos            692 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\96
+
+28-05-2025  08:37    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44            20.023 176444d461f156920667247c28a6b13b02aa37
+28-05-2025  07:44            14.224 376ecdb6f450fc7c4e71be4b8dc34d5b2568bd
+28-05-2025  07:44               157 3cea99e42c845d79d7db5b92cdb818f88449ae
+28-05-2025  07:44            17.305 540a34b57fb554ebfb145f858fcaa040e21584
+28-05-2025  08:44               298 b0b454ee2f60528e24df0ac8e9ac76e85620c0
+28-05-2025  07:44             1.320 c9532a44e1c5511443279924c8afc8667a2736
+28-05-2025  07:44                56 e9161fde31e9906718f689d5cc135e507a51e1
+               7 archivos         53.383 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\97
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             2.419 4910d783cebbbd1c4846a944b12a5136651e9b
+28-05-2025  07:44                85 69e44e397cc2a8f089258833a733f3fe0627ef
+               2 archivos          2.504 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\98
+
+28-05-2025  08:59    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44            59.107 1ce0cf0ae23db282558439117b87cff129fcb0
+28-05-2025  07:44               336 68fa8f32c03c911ae8ff57483368aad030fafb
+28-05-2025  07:44               325 8a38a16de5dcc378090ba8368b98390b394aca
+28-05-2025  07:44                91 9a7d7e52b73f18f7c594e9e173fc01c113fd55
+28-05-2025  07:44             1.007 cd645b29bd16d1c25f2ed55327aef8ab27b93a
+28-05-2025  08:59               297 ef7dc28284ec26d8d72914423300be6c6a63f1
+               6 archivos         61.163 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\99
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               384 197029c1ac44c56569b39e6b5994c19330460f
+28-05-2025  07:44             1.353 dfeb6c80dfed0a80dac97c6e9f04263fec7a8c
+28-05-2025  07:44                52 e3bc613e27d12d6ac0f916871cb83386738273
+               3 archivos          1.789 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\9a
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                58 51db35fdfd10d50806c24e9108324f187da0a3
+               1 archivos             58 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\9b
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               782 291bddb2d0dd0e37ca82e6ac02a7002b6e0c44
+28-05-2025  07:44               742 8b2f82aec45421466c27d777de1d8565e03565
+28-05-2025  07:44                74 98595004b23ce56854e4be1181217591e34776
+               3 archivos          1.598 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\9c
+
+28-05-2025  11:31    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               986 35cec93a5697a6c0858b8bbf8092c9dcca27ee
+28-05-2025  11:31             1.109 96d4598ad8aef9148c1cb5b71c782de9e81ffc
+28-05-2025  07:44             2.890 e12ca2d026fa202f7a0d32e0a7c8526660ed78
+28-05-2025  07:44               689 f48f5a1421c943f38a21bbf05efc249fb53a41
+               4 archivos          5.674 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\9d
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             4.128 7d2607e85419d5ad4505869e1294217873e6a5
+28-05-2025  07:44                20 aeafb9864cf43055ae93beb0afd6c7d144bfa4
+28-05-2025  07:44                53 fe94debcaaf2ed661e90bacfee6c592c69a068
+               3 archivos          4.201 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\9e
+
+28-05-2025  10:54    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               790 306aac4ca51506bd02cc329ef347472df71be3
+28-05-2025  07:44             1.734 367b5bc5b59c98923b75d327799e5759f15e23
+28-05-2025  07:44               167 5173c80da67de620a9b3a769936d77bf68ba73
+28-05-2025  10:54               312 6740e795b7da6f5fbc428aa89715f5f027c479
+28-05-2025  07:44               667 841e7a26e4eb057b24511e7b92d42b257a80e5
+28-05-2025  07:44               434 8fae6bfea81685466014e38b1c01e8843ccbd5
+               6 archivos          4.104 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\9f
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               234 04f02020a629275d6e90cb8d7cf5c5d13c8f7d
+28-05-2025  07:44               314 c31470e7b06fac7750c37d64a65127a9592c31
+               2 archivos            548 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\a0
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               513 37d1e0b2cea52adfa856905c1d028a059adc0f
+               1 archivos            513 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\a1
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                71 3107e24926aea33fb0cb22ae209ab2be115577
+28-05-2025  07:44            39.437 5e4f70a5272154789c71d5cc8a1ed2979a27d4
+28-05-2025  07:44             4.074 727b818012c624b05e8b2a76a4340a15020f98
+               3 archivos         43.582 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\a2
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               167 202dc39767adad11f1df67b2ffabba8aaf9cbd
+               1 archivos            167 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\a3
+
+28-05-2025  08:59    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             7.281 0b32cdf91b6eb501f9ad314804dcca434a9e9c
+28-05-2025  08:59               819 0d6bf0e661850a93313c6c2e49b7b51c26d90b
+28-05-2025  07:44               341 733e8409345ea73439bfa3c991f2a5ccfa20c0
+28-05-2025  07:44            44.005 810f92fd35ae480e46a7d77d920231bd5d02d0
+               4 archivos         52.446 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\a4
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               177 081b013e2a7f3406e47ff109bc0c454905b4cf
+28-05-2025  07:44            22.047 0b9eeb8860f69069491b44244e0aafa07e1851
+28-05-2025  07:44             2.242 1e966c0340fe7df952ef2d5707405e855eb117
+28-05-2025  07:44               107 44a129dec9c8dc9e0ed3f6914e8613f01df37c
+               4 archivos         24.573 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\a5
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               364 1449b2b80363157f6e8d39aeead6ee9d519a01
+28-05-2025  07:44               277 62009c8c8772623a89c074a518cdf636fd87d5
+28-05-2025  07:44             6.205 ed039efaf371a59fd8421e8605e480d9e7e228
+               3 archivos          6.846 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\a6
+
+28-05-2025  10:06    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                73 1bc60a86c3c7149b6fcef29c4826d2ee404235
+28-05-2025  10:06               192 46fc9048739914e66c0aaf13bb18756ab71cbd
+               2 archivos            265 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\a7
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                85 51424cdcdd37aab366b9ed966e1ed9651308f5
+28-05-2025  07:44             2.265 ee548cea1bb3f3a2a70eb2b139c0401db7b32d
+               2 archivos          2.350 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\a8
+
+28-05-2025  09:24    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  09:24               191 297ad84c5655a955c72397d8baeaa9dc5d891c
+28-05-2025  07:44               152 9884b2c01182c8719b5c8b195b6f20be2e3dab
+               2 archivos            343 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\aa
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               329 38cae49d7743b3c1e1eabbbaa2c18a34b2e302
+28-05-2025  07:44               119 6a8c38f1a72df03bd095b16bcc1a3e7d46874c
+28-05-2025  07:44            15.008 e9799c1a8798d5899ffed6deda4c98b7007b48
+28-05-2025  07:44               121 fdf3b2b8f0ef01aa1b3e44596560eee3f38ff7
+               4 archivos         15.577 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ab
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                88 0e5d7dcd43056d5d5288de0d08ca4177efb2db
+28-05-2025  07:44             1.247 9d415fa36ae448b12c8cfb7f36e252259b916f
+28-05-2025  07:44             3.454 f65423daa021188553fbad8f39820c73949f9b
+               3 archivos          4.789 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ac
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               411 905c43206e73f28a6610cff1bb47ba9c41f9ee
+28-05-2025  07:44             1.696 a36f9f0bc9662c8ff39d6e61e727e69fbe5b2a
+28-05-2025  07:44               119 cbb51bd2195e99f1f95fc742e1ae2e4081ad09
+               3 archivos          2.226 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ad
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               551 30e39a21efa77a2cc5923286365b5475228708
+28-05-2025  07:44                34 6f43e35f4a342bcac73ec92226b342f282097e
+               2 archivos            585 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ae
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               116 f9993084c3643257b6d6aea21f76017caf92a7
+               1 archivos            116 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\af
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             7.259 0470be3ab1889937ccac2391c8cb00255dbc8b
+28-05-2025  07:44             9.162 10fd92c8004805dce1cd3456ff7f067082640a
+28-05-2025  07:44             1.270 c61742ec2e162187f75eb7f16241182dae9fca
+28-05-2025  07:44               204 cda9a3e1db6b29242066da2ffe642107b00d00
+               4 archivos         17.895 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\b0
+
+28-05-2025  08:37    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                62 7f9476daa615b60e163a63debe2b70a8c7eacc
+28-05-2025  07:44             4.515 9df6a42b0b46ec9aa3bd98b675b94c9134b98f
+28-05-2025  07:44               155 b0ad0700595b244435151b605db268ae723e0a
+28-05-2025  08:37               193 bb3c47e9359b6af2f1967608858575b19da842
+               4 archivos          4.925 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\b1
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                52 31000796f0cb804c38b121021940cd962cc1a7
+28-05-2025  07:44             5.322 911caddbe4901a37ea314fdc5d2eacdae5cee2
+               2 archivos          5.374 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\b2
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               186 01a5a523ed18bde69edd3b3deff3b63c463120
+28-05-2025  07:44             5.946 2f83a291507d2c30848803eb3257edf8c3c497
+28-05-2025  07:44               132 b950345668d94dd745caf80e25302d02ca1cdd
+28-05-2025  07:44             1.004 ccac8527a2544dc3bf562ef5150222a831f929
+               4 archivos          7.268 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\b3
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               814 8fc85ff415f0bbf893eb55eaf54dcbba67e73b
+28-05-2025  07:44               117 aa83b757fd46279a891226067fd20850391ce2
+28-05-2025  07:44               840 e7adcab01c95bf18570cbfab5d90b8fb3e3f97
+               3 archivos          1.771 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\b4
+
+28-05-2025  07:46    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               121 1baff3c9960a110087369cea8dbc86d6a75f0b
+28-05-2025  07:44               878 66dd516eee81ba47208de4c082f217a69e56a4
+28-05-2025  07:44            11.255 76033595ab3e2641ea327a4f33a7ae77101943
+28-05-2025  07:44               517 b4688fbe21410f840ebadfc21512da78bc3cda
+28-05-2025  07:46               149 f4e9c3ebf3bdf4392b7670b85c3ffc131196d9
+28-05-2025  07:44                68 ff85a33b6eb482476385b7c3e6661ec9c9eb0c
+               6 archivos         12.988 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\b5
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               191 68ad393bd22da735d31af78462946a86d720f8
+               1 archivos            191 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\b6
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               663 271f66ddd1bd6f71e5bfa17f2443cf116eb9c0
+28-05-2025  07:44               256 7110c7ad6e5501a355b3c96f410b4216f0fda0
+28-05-2025  07:44               388 826da1f7817f97ad6d307d698ad2004807c40a
+28-05-2025  07:44               134 9adcc5a7f190f38c6907584432368e77d097d0
+28-05-2025  07:44               970 d3467a5882456262c61909f29685e07e04f3ba
+               5 archivos          2.411 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\b7
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               217 190abe3bfa65c0a316831053dccd532fb33ed1
+28-05-2025  07:44             5.077 1d553fe76cf98f1b6eb0b6b3fd044a0811326b
+28-05-2025  07:44             5.200 4d9d2919a5efe8f5a0f0b9951855368a6d3d47
+28-05-2025  07:44                88 9215663a657631fd01aef3d95dbffac635b707
+28-05-2025  07:44               131 dae9533e1afd95f3b9740dc77ff494f496716e
+               5 archivos         10.713 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\b8
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                39 7286a21e3eda5e94932818c21e2bd20b30e905
+               1 archivos             39 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\b9
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                72 2d46be2cd3dc21c004f16a9196d2bccbba16cc
+28-05-2025  07:44               103 7d8d0bbeb4d950abaf84c192d6e0a06a6ffada
+28-05-2025  07:44               680 aa9f02bf5f66ed94eb1629f0bddf6d2b2ae16f
+28-05-2025  07:44             1.377 f34d5991077fe9fadc7d9187a7225db7e58fca
+28-05-2025  07:44                71 f82c46434fe514f0c4e20f5e738c077dc6a2d8
+               5 archivos          2.303 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ba
+
+28-05-2025  08:23    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  08:23               180 2cc7b0464a2a6f67e5f3339d6fdb76fecab5fb
+28-05-2025  07:44             2.745 8a02c1667c231f0bf53480ed3be66e62c0d01a
+28-05-2025  07:44               140 99af43fe36a32096fd9bdd451c200215f9293e
+28-05-2025  07:44               629 d5ba0308e9785aadfe849f784fc439a464a967
+               4 archivos          3.694 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\bb
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               569 ef6964509e73f95e5b390b3923f919c72b6528
+               1 archivos            569 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\bd
+
+28-05-2025  09:25    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             4.348 1d94b7f12eb2144fd68163e6481ad0e5f2b70a
+28-05-2025  07:44               238 641f7c5c4860423b5658a8a2cf339e137f2bf9
+28-05-2025  07:44               449 924339eb3986d17544bd1905c8856e25396e27
+28-05-2025  07:44               124 d626ce91477abbdd489b79988baebadbd3c897
+28-05-2025  09:25               298 dffcc827dcc225595b530978d26d7b9f23f406
+               5 archivos          5.457 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\be
+
+28-05-2025  08:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  08:59               297 20b4503bbfe7cbca9742f75eeefa2023d0ae23
+28-05-2025  08:37             1.370 24bec1e74ee34dd4a2d0ed57458aaa6854fadc
+28-05-2025  07:44               492 2b845b25ef5faa11e8e3ba2f1a11fcb5f8a2e6
+               3 archivos          2.159 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\bf
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               126 db3296d4d1fc2f8f1ddaef0aa75124bd6b08cf
+               1 archivos            126 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\c0
+
+28-05-2025  10:54    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  10:54               170 1b239b54d69ca9a5f169b11b1fb91f436eea6f
+28-05-2025  09:24               298 607a5ffbea3c2487b4bd386665fac66e0ee4eb
+28-05-2025  07:44                85 a4103811f69cdfefb43e1fd0a5a866da3c0cd9
+               3 archivos            553 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\c1
+
+28-05-2025  09:51    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  09:51               817 22ab87a231ac0fb9cf917feeedabf1b7b716aa
+28-05-2025  07:44                38 d4c552456bde706a914f901e9ccd523ac44e7d
+               2 archivos            855 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\c2
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               864 7bc9fc0c44620607d2e39a20387079694a2c7b
+28-05-2025  07:44               261 85b705a47c18585a136bd18b85d75662b17deb
+28-05-2025  07:44                56 a1f94770390700cae40dcba5a325bd5dfd36db
+28-05-2025  07:44               658 a8460a3c4c3b8de391983485f26f4bce0ba5a6
+28-05-2025  07:44               139 cbbdfc65c390afc3205f87dd95bc996e24cbb8
+               5 archivos          1.978 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\c3
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.310 186aeb6c4f6147b7ffdd19beb9f67804847f39
+28-05-2025  07:44               318 1bc074cd7403d170cffe490acb6a0436d3cf94
+28-05-2025  07:44                64 261c91e08c1a3c6499741ccd32d47612bea72c
+28-05-2025  07:44             9.880 40ef66714ae35b6e729b15e44876fe3c4576a5
+28-05-2025  07:44                96 8c7338d662aa0eef7197cf6cd90dd98b04ed13
+28-05-2025  07:44               598 bfe4d4fe956aecceb49f159c89785b3c9f81fe
+               6 archivos         12.266 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\c4
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                63 9cecaa240c415345f455f2e4fbed99015c1713
+28-05-2025  07:44               656 f052af05ef1dc8381181e2ebae229d86a30c93
+               2 archivos            719 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\c5
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             2.304 043b75b958766a3880805dc4f19d70a4f167dd
+28-05-2025  07:44             1.083 10073fc00ca6b769d6efea31e0c88fad7917d5
+28-05-2025  07:44             1.520 153a3abeb0a50b7f97ffb7123fec4b6130f1fc
+               3 archivos          4.907 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\c6
+
+28-05-2025  08:59    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               506 12f1a55fda02075d146f05a14343a0c73e6fb6
+28-05-2025  07:44               759 95b7ab0baf87c789f9c78375d8aeef767e1c13
+28-05-2025  08:59             1.280 b6348b012664b6d554b6e9794ed9a13f30582c
+               3 archivos          2.545 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\c7
+
+28-05-2025  11:21    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               102 1df9c2bcf07ca4340530058d0662661f29ec95
+28-05-2025  11:21             4.112 1e8768cbf772f5c236559b57545b5923930bfc
+28-05-2025  07:44               111 e14d25e5a0bbe6c66d332c9dcdfb6f1dba9788
+28-05-2025  07:44               683 ff12a2f8af2e2c57f39da1754409c25b35f46a
+               4 archivos          5.008 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\c8
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               383 af44c522e5067c08511d5171f7e037f615e3d2
+               1 archivos            383 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\c9
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               170 a8fc4d4693439805d9eadcecc93f8a0c423eb8
+28-05-2025  07:44               260 d6225b426344aacc148725db6d7940234c5d6c
+28-05-2025  07:44               660 eca5dd999d7cead12f32f6089b577e8e78c23e
+               3 archivos          1.090 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ca
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                56 62d9ee2b8abc4235b4e6b493d48c7e66290272
+               1 archivos             56 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\cb
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                56 68a95b657ccb03adc84afcbc1d172e56d78efc
+28-05-2025  07:44            79.638 73ebf78ffcf5465770129a814cf8c840d816c9
+28-05-2025  07:44                55 8f074b6c82be77ea023da93b6d0d90517e85e4
+28-05-2025  07:44               462 ea7ad8f6bc63f0b9c5710b942852f9041edf73
+               4 archivos         80.211 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\cc
+
+28-05-2025  08:59    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                80 0c52124b678924decd65b835587b5cbdbb878f
+28-05-2025  07:44             3.194 3cf8390d16d4568d961f93395b7d330c4ada27
+28-05-2025  08:59               211 72c7d3bd9e0d354fcd1c6515be4ce819252ec4
+               3 archivos          3.485 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\cd
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               341 1ba6b083298c21abf55670e98f50a7f265456c
+28-05-2025  07:44               473 1ca0c457b5653ee8860a9f6fbb34e19d520f13
+               2 archivos            814 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ce
+
+28-05-2025  10:04    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  10:04               142 144fd5b1f17fa5d8a69e6f4beec61056e35caa
+28-05-2025  07:44             5.147 1dd98713317a95f0a72036434478172fe991d8
+               2 archivos          5.289 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\cf
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               109 9616c4a6671026d27790a79dbf26732a5860fb
+28-05-2025  07:44               122 c6affd0ab67ba717dfd79219fdf32716d07d0e
+28-05-2025  07:44             2.350 f383e5b426cfd8c196b544c3d1cfac3930ae0d
+               3 archivos          2.581 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\d0
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               149 0a537a9c503e048e6f7323b5afa9ebb46f675d
+28-05-2025  07:44                56 2b2c5d7375751139257aadde0ddbaab50f332b
+28-05-2025  07:44               524 39ac4f80de00ab5539460a000e6eeaea7a6ec7
+28-05-2025  07:44             1.907 a5379f33cd70e519fedee48821e7094bf283b7
+28-05-2025  07:44                86 e860bbbd27d760ef6842eb14a49a5b8a7cd90b
+28-05-2025  07:44               720 eb9acd69412b0aba7f396dade3bf4973da9823
+               6 archivos          3.442 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\d1
+
+28-05-2025  10:49    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  10:49             1.032 1bf08c90b0fd6207f421d3dc003388010d6c35
+28-05-2025  07:44                55 42658debdd3af8bf77fc902e19607c60ec8c8c
+28-05-2025  07:44               290 76c1ab30e5193071f5f6a6b6e8aaa4402476c6
+28-05-2025  07:44             4.082 774bdc82050d37f49a9771f1add3bfd94b4cf5
+28-05-2025  07:44               329 791f0b8e0c1c6815191721b1b71501ed155c1d
+28-05-2025  07:44             5.798 9026dc2ff99c5a865defba1953ec7588278345
+28-05-2025  07:44               529 c0f9ef7238ec86e5579900d9d55903b4f9bcdd
+               7 archivos         12.115 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\d2
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                54 1c921d99a7371e8cdeaeee43579f6bc3da77f6
+28-05-2025  07:44               185 56c6c0b0df6e43859325ebacbaca16a7efcfe1
+28-05-2025  07:44               376 5f50e9ea3e4ab6fe58930a8df0d20fb8a4f145
+28-05-2025  07:44               174 b7723147450c8094f98d20d88a5170a4173bbb
+28-05-2025  07:44               425 f33bc7edc58145ee217dca6b3a2758f372293b
+               5 archivos          1.214 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\d3
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               211 d3f0fb0c22249be1d1515443a612a49bfc3c9f
+               1 archivos            211 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\d4
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               252 3465f903ed6354a2ceae4a182768838955b528
+28-05-2025  07:44               130 466576c8da7375ce162417ecc020c24e97e7c6
+28-05-2025  07:44               718 a994f50bfa1ecc19489f03822a6e728d3e2a49
+               3 archivos          1.100 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\d5
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               639 4c14c60fa3590259439e2d02b995710966a664
+               1 archivos            639 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\d6
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               301 509dc673b4d89ec25e0760379ef750a9308de2
+28-05-2025  07:44               267 8c8b716ff04186cd4c0ed8f85af474cfbfbc6a
+28-05-2025  07:44               139 dd3029d8c51858964fdf8e05228ab604334f5f
+28-05-2025  07:44               330 eb99219f3d9d9d44a688312c204059aaf312f0
+               4 archivos          1.037 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\d7
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               109 8193ddeae4d19e2219801b35b16c13f5a87aa1
+28-05-2025  07:44                93 c430fdb3ae766b215ad8e072d6ac2212d7c619
+               2 archivos            202 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\d8
+
+28-05-2025  09:20    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.276 35e20b957be00d24b62cfc3e7243cc9f133ca2
+28-05-2025  09:20               832 65fae2001e7dc7cab401d316ffb602399a8d1c
+28-05-2025  08:59               182 d5b75256f44517e77ecf0c6617f3da442d47e3
+               3 archivos          2.290 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\d9
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               175 0a1bc657a8c3b85c939c7b20e4ed4e4aba4ab0
+28-05-2025  07:44               117 a6668c3ae6be748c78fbd5694053706b3d6942
+28-05-2025  07:44             2.159 c0f30a34ccccdf1636aa599b7d40dc7d111e5e
+               3 archivos          2.451 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\da
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                36 1fde3f638b9a9a3db026668427ae9cde5bbcb7
+28-05-2025  07:44               240 6cd63fdda9a325e72363c0a56977dbe6801892
+28-05-2025  07:44               117 bbe230d74beb5962f67a6da7da18c707441ad5
+               3 archivos            393 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\db
+
+28-05-2025  09:41    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  09:47               307 5a055c1b4a5d0950d11ea46f30dfa270e9e280
+28-05-2025  07:44               699 bcd3cc97ea2bf9d1ac1c40cb547360426c2517
+               2 archivos          1.006 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\dc
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.016 7452cc5a4429c65d4e3289a8a8c1fc425453df
+               1 archivos          1.016 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\dd
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             2.397 cc7e6b95ca9aab30e8ef697e8941869adad32a
+               1 archivos          2.397 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\de
+
+28-05-2025  11:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                56 194dfdac06196a1276562fe032dac74952f063
+28-05-2025  11:44             1.089 287a456dcd3c467b9b85363bd4c6ee1b51ffe2
+28-05-2025  07:44                76 b51673134c7cfeefc4f97df1922864cee680be
+28-05-2025  07:44               207 cb77dedde56627ef2d50280daa14326a6091e1
+28-05-2025  07:44               525 ccd730041e0b22e4c1af7953af2831b7ec4742
+28-05-2025  07:44                58 f48a3ccd01ec119d6d996fb6070d82de1641a5
+28-05-2025  08:59               298 fccd00f5fc00341466aabe24123ffa0c55582d
+               7 archivos          2.309 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\df
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             3.927 074a4f1366665aca0560594ab4c63e5be7fe2a
+28-05-2025  07:44               527 25e7a2f89c3a42ce31359bba12a6a5dd8c25f5
+28-05-2025  07:44               657 31cbf3c064d00ba5f15a3bb13c957b598b96a1
+28-05-2025  07:44               103 5b2f63a7cc063c8de5ffe0b0e38c384d3f7ce1
+28-05-2025  07:44             1.455 75004aed7007aaf4624aaa1847a6fedc1bdf09
+28-05-2025  07:44            10.347 bfabecf0c7e349f80c153f4ff6c66ee71254aa
+28-05-2025  07:44               136 c59fa51ea6d188c6e1390f2552eeda69d17238
+28-05-2025  07:44             1.127 dd8156cceb149c2c9efc84c81c3e8f9cdb8ddf
+               8 archivos         18.279 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\e0
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               378 296f8e25c8f10b0b4fbb428b8d92c04c5373a9
+28-05-2025  07:44               191 a29251646c4cc40dd6b1be8d3e28674cd21ad1
+28-05-2025  07:44             1.021 be17689a436a7734b168e8d12f5e97e054f0a5
+28-05-2025  07:44             1.169 df06fde49f835f2c494657d841f3a3c4004720
+               4 archivos          2.759 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\e1
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44            12.465 ca2523b90cb59eb5bbf6e6b775ad703888fb24
+               1 archivos         12.465 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\e2
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               146 28065f3682d916a1474496f002a9c7bf23c2f4
+28-05-2025  07:44               177 550c0fb7e8a8b16191ac89b2aaab429948720d
+28-05-2025  07:44               401 562720c22b5851ba2daee5937552e1c29ccd45
+               3 archivos            724 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\e3
+
+28-05-2025  10:49    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  10:49                53 077f9306c076b18647da4ac4cd91c0b39569d0
+28-05-2025  07:44               122 6475cf878ca6beda4dfd1cd3881759b72270c6
+               2 archivos            175 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\e4
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                65 210e01ea5a4def42ac84742b36d2cada422ca4
+28-05-2025  07:44             1.028 4b207c221d5cfc5a1d4e72b223810727e5a69a
+               2 archivos          1.093 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\e5
+
+28-05-2025  10:04    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.677 43fea27527eefd7363d0d117246da91a9cb4bf
+28-05-2025  07:44                87 5deb752a6ec0459ee37122a0059254e86e7ebc
+28-05-2025  07:44             1.168 b0300258950d1cd622fc5367ddf50717278ce0
+28-05-2025  07:44            22.596 b327e9b669b400f12800dc4c8f3ffca596548c
+28-05-2025  10:04               308 db3c621f541d59d7949d6224f371558cf62848
+               5 archivos         25.836 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\e6
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.627 76b11ec342a3d61514fb0216abf2b9b5151dc2
+28-05-2025  07:44                15 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+28-05-2025  07:44               133 c51bee433645af0221f124bc33e7d7ca3626a6
+               3 archivos          1.775 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\e7
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               663 323bb52ec35279e2df7d728a6dd5a10b99afd8
+               1 archivos            663 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\e8
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             2.038 092b21d0997d569efea2d059a4d5b50027df97
+28-05-2025  07:44                52 1feb87f656b41cf19c305326728b5aee7f637c
+28-05-2025  07:44             2.407 2520c166537d927e77bd3550697c3bb9073bba
+28-05-2025  07:44               225 eb012902cdb8a6ae30d5713d3ae9639b7216d9
+               4 archivos          4.722 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\e9
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.294 9dc8388eb61963b4ca62f0317d273e9d981a4f
+28-05-2025  07:44                87 cd1c78709f0773db77943de1fdb95d3d268a5f
+               2 archivos          1.381 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ea
+
+28-05-2025  10:50    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                78 4aeecfd04c4c0b3dc79389754968cf1e201c06
+28-05-2025  10:50               306 7a81efbd14c99d3376beb6c3215db06926eddf
+               2 archivos            384 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\eb
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               345 024f5c51c925b5d3848177305b6173aa7762a9
+28-05-2025  07:44             1.336 186ec601ca337a3e77d372edbdc1d560cd4294
+28-05-2025  07:44               659 71d3f3b6b015e6f49449612b5e79d1f1d7e439
+28-05-2025  07:44             2.492 869a6f046ba5da45f06fcecbb908ed65046f11
+28-05-2025  07:44            25.759 9c42c457a3b42f3af43e37ed62de4d704c413a
+28-05-2025  07:44            58.559 e5f2eaa58b0eb7123557c89b2408f11cdcdd67
+               6 archivos         89.150 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ec
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               160 2be30de1663c20ea2166f33a583c9c0b84d029
+28-05-2025  07:44                53 3ae0da9b14105ca1c401de0fbeb827b29ce32b
+28-05-2025  07:44               137 49bf12877f62026e56899693bfadac77149498
+               3 archivos            350 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ed
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                85 b55dfbca86a881da139244122c4f734d6a5844
+               1 archivos             85 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ee
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44            10.673 370b440e95ff0a6ba5aade20b859750d7630ec
+28-05-2025  07:44                56 4673b6c4c7a7ed9ef41846fb09deff4b70692d
+28-05-2025  07:44               406 86265ae3adab9f03cf10f486384735417320e6
+28-05-2025  07:44               388 a3291c54b473ae55f4c8e5f5d2b323e2400f9b
+28-05-2025  07:44               657 abd1c37ce03aeba427120b80997db32513f35f
+28-05-2025  07:44               394 b5a8a186579f26a628ef200e8defa3e9597d0b
+               6 archivos         12.574 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ef
+
+28-05-2025  11:15    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44                47 074effaeb60e9cf0844381153aa200336b860f
+28-05-2025  11:15               340 9f1b6f62bedfd47357cbceaab292350806923b
+28-05-2025  11:15                52 e24f35a228b3382337357c3dfc101814a35094
+               3 archivos            439 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\f0
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             2.340 d525701ccbc013819e1e200d8e229ddb671a60
+               1 archivos          2.340 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\f1
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               670 0e8cd22366d532cd5a5973a5b801419779e99b
+28-05-2025  07:44               808 757b3a803db86e4f41186a4ff2b7411724d39a
+28-05-2025  07:44               267 b880554aae3ac981c255f24b8a38ff7bed627e
+28-05-2025  07:44                53 d2f8dc116fa196e6dbe77e25d4bd487beaff41
+               4 archivos          1.798 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\f2
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               311 a87f1b7518f72d94894b21fbfe96b7d0264ab3
+               1 archivos            311 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\f3
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44            61.141 0abb896217c9e2b4a0cca8f3245ba1729236d0
+28-05-2025  07:44               101 33913a4565f7067b05ddbc415490e585f2d1e1
+28-05-2025  07:44             2.980 34b0bcc3f634daedb1234815db78dbe6a8c0fd
+28-05-2025  07:44                87 6d31b29eba0d79b16f3f08b5477dd473e2c18d
+               4 archivos         64.309 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\f4
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             2.019 7f71d63866904b6a83bbd68f100db0f96adb00
+28-05-2025  07:44             1.033 cec7152578638f52f6fa67a96c748271e6b4b4
+               2 archivos          3.052 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\f5
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             3.123 679466ff17fb88a434e182a612f422f7cfd2ab
+28-05-2025  07:44             1.030 6a1c92bf5c21380396826493eff1be86f19027
+               2 archivos          4.153 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\f6
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               210 14df0614d49ab0292d16879cd5e03d1acc5f0f
+28-05-2025  07:44               917 be35cd9bf40d2c13095c71b907de10f2eb7cfa
+28-05-2025  07:44             1.197 fb73b5a903969c87b3be0e6db6f652b6302993
+               3 archivos          2.324 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\f7
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               680 59b8a8396e3993fb7901d7551d38ee2a786b31
+               1 archivos            680 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\f8
+
+28-05-2025  09:49    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               657 2f38963b0d282b529f64def2bcd40be3a9a947
+28-05-2025  07:44            20.993 4fd5bbcea5ddaa9e9d885ce2988a8c68f474e2
+28-05-2025  07:44               112 9133196ee0b832df3d8afa5157bcf2e80849a1
+28-05-2025  09:49               188 a92bf029a346183d1a969e21d3d3f9b08945af
+28-05-2025  07:44               757 b4cce347f6718bd564f2d5f9f31f93e17fe5d5
+               5 archivos         22.707 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\f9
+
+28-05-2025  09:33    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  09:33               196 0a7d843a2174f06fde46b093850f10b2b89ff1
+28-05-2025  07:44             2.152 5f9c1747a4cc6229b29ab450a859277ad3c16e
+28-05-2025  07:44               761 7b474105d705cc4acb88c32aaf60cfb28bf6b3
+28-05-2025  07:44               753 ced26241c3d9024841df9df981e9b495179b24
+28-05-2025  07:44             4.994 e6cc078dadd58957c92af75542453c18169d73
+28-05-2025  07:44             1.041 fc80e462e5cf80ed6b33288d0b78a1b4da5af6
+               6 archivos          9.897 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\fa
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               227 65265a9d45a38560d60c71f0a3305802c39365
+28-05-2025  07:44            21.812 c5c0c2800b2bb1eeb5a2e41619501ca48ed064
+28-05-2025  07:44               726 e20579c6f85bf90f3b965b57ce6dd3cee79415
+               3 archivos         22.765 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\fb
+
+28-05-2025  09:41    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  09:41               203 0ca40ab3c6af2f6b5666ce4e65e14b77c2466f
+28-05-2025  07:44            36.968 2207340ce91045aa3b2ad292df22994b0e022d
+28-05-2025  07:44               302 a3990d8c284b9dbed3149955bf7325d24609d0
+28-05-2025  07:44                81 a584289ac345f64e2e92ee7fa376a949e6ee88
+28-05-2025  07:44               975 ed187879c12efa431383a9d4b9f340e9c41184
+               5 archivos         38.529 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\fc
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             2.909 be3975345864993090b8ef368631f51ea472d3
+28-05-2025  07:44               481 e35ae717615d6627275d5e0507e7538a9df385
+               2 archivos          3.390 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\fd
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44               817 4384cc0c34ce3e1e411bc8b0557680cf000eff
+28-05-2025  07:44             1.945 83b68af90967f2055a9456e9ad69bb1e74eab5
+28-05-2025  07:44                34 90f2d504422b14fbe14393fabdc0fc0a8db6a0
+28-05-2025  07:44                53 cae282250939d41404fb71d26f7a5874b0e2d9
+28-05-2025  07:44               890 d2abe34d3c8d6d87679f4a2e9b87d6c7af487b
+               5 archivos          3.739 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\fe
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  07:44             1.069 91cceda9f26bd260a64ae915e2faea8d6c64c5
+28-05-2025  07:44                78 e3f621ed517b821371decc956f3fa83bd3a45c
+               2 archivos          1.147 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\ff
+
+28-05-2025  09:51    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+28-05-2025  10:01               307 2704bda12f3af2b82f9a734a6cae14fee42b4c
+28-05-2025  07:44               527 601cc4f721c1e51996bbf5154f880868c6eaa6
+28-05-2025  07:44             1.020 8c2a531b89061d61eadcdd419a752b79cd2daa
+28-05-2025  07:44               172 a51355dc7e5d3eb24f602f85f6ae57d087d310
+28-05-2025  07:44             7.468 be44d7b0d8ff19a7e1b8aa97fc659e756fe9b5
+               5 archivos          9.494 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\info
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+               0 archivos              0 bytes
+
+ Directorio de C:\openpose\selen-api\.git\objects\pack
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  11:44    <DIR>          ..
+               0 archivos              0 bytes
+
+ Directorio de C:\openpose\selen-api\.git\refs
+
+28-05-2025  08:59    <DIR>          .
+28-05-2025  11:44    <DIR>          heads
+28-05-2025  07:51    <DIR>          remotes
+28-05-2025  08:59                41 stash
+28-05-2025  07:44    <DIR>          tags
+               1 archivos             41 bytes
+
+ Directorio de C:\openpose\selen-api\.git\refs\heads
+
+28-05-2025  11:44    <DIR>          .
+28-05-2025  08:59    <DIR>          ..
+28-05-2025  11:44                41 main
+               1 archivos             41 bytes
+
+ Directorio de C:\openpose\selen-api\.git\refs\remotes
+
+28-05-2025  07:51    <DIR>          .
+28-05-2025  08:59    <DIR>          ..
+28-05-2025  11:45    <DIR>          origin
+               0 archivos              0 bytes
+
+ Directorio de C:\openpose\selen-api\.git\refs\remotes\origin
+
+28-05-2025  11:45    <DIR>          .
+28-05-2025  07:51    <DIR>          ..
+28-05-2025  11:45                41 main
+               1 archivos             41 bytes
+
+ Directorio de C:\openpose\selen-api\.git\refs\tags
+
+28-05-2025  07:44    <DIR>          .
+28-05-2025  08:59    <DIR>          ..
+               0 archivos              0 bytes
+
+ Directorio de C:\openpose\selen-api\.vercel
+
+31-05-2025  02:55    <DIR>          .
+31-05-2025  03:46    <DIR>          ..
+31-05-2025  02:55                88 project.json
+31-05-2025  02:55               520 README.txt
+               2 archivos            608 bytes
+
+ Directorio de C:\openpose\selen-api\api
+
+29-05-2025  08:08    <DIR>          .
+31-05-2025  03:46    <DIR>          ..
+29-05-2025  08:08                 9 .gitignore
+29-05-2025  08:08    <DIR>          .vercel
+01-06-2025  01:09             5.179 selen.js
+               2 archivos          5.188 bytes
+
+ Directorio de C:\openpose\selen-api\api\.vercel
+
+29-05-2025  08:08    <DIR>          .
+29-05-2025  08:08    <DIR>          ..
+29-05-2025  08:08                88 project.json
+29-05-2025  08:08               520 README.txt
+               2 archivos            608 bytes
+
+ Directorio de C:\openpose\selen-api\Memorias x7
+
+31-05-2025  00:02    <DIR>          .
+31-05-2025  03:46    <DIR>          ..
+31-05-2025  04:00             2.955 DB_CONFIG_FELIPE.csv
+30-05-2025  23:36             2.869 DB_CONFIG_SELEN.csv
+30-05-2025  23:04             1.909 DB_CUERPO_SIMBIOTICO.csv
+30-05-2025  22:55             4.435 DB_INSTRUCCIONES.csv
+30-05-2025  22:10         3.502.001 DB_MEMORIA.csv
+30-05-2025  23:46             1.405 DB_MEMORIA_CURADA.csv
+30-05-2025  22:53               807 DB_MIGRACION.csv
+30-05-2025  22:51             1.854 DB_TRIGGERS.csv
+               8 archivos      3.518.235 bytes
+
+ Directorio de C:\openpose\selen-api\Memorias x7a
+
+30-05-2025  23:03    <DIR>          .
+31-05-2025  03:46    <DIR>          ..
+30-05-2025  23:01             2.792 DB_CONFIG_SELENa.csv
+30-05-2025  23:03             1.909 DB_CUERPO_SIMBIOTICOa.csv
+30-05-2025  22:55             3.748 DB_INSTRUCCIONESa.csv
+29-05-2025  12:41         3.806.388 DB_MEMORIA.csv
+24-05-2025  08:56             1.219 DB_MEMORIA_CURADAa.csv
+24-05-2025  08:33               849 DB_MIGRACIONa.csv
+29-05-2025  12:34             1.653 DB_TRIGGERS a.csv
+30-05-2025  22:07               183 integraciones_api.csv
+29-05-2025  09:03         3.307.400 Memoria_Unificada_para_Grok.csv
+               9 archivos      7.126.141 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules
+
+28-05-2025  07:18    <DIR>          .
+31-05-2025  03:46    <DIR>          ..
+28-05-2025  11:21            13.125 .package-lock.json
+28-05-2025  07:18    <DIR>          @notionhq
+28-05-2025  07:18    <DIR>          @types
+28-05-2025  07:18    <DIR>          asynckit
+28-05-2025  07:18    <DIR>          axios
+28-05-2025  07:18    <DIR>          call-bind-apply-helpers
+28-05-2025  07:18    <DIR>          combined-stream
+28-05-2025  07:18    <DIR>          delayed-stream
+28-05-2025  07:18    <DIR>          dunder-proto
+28-05-2025  07:18    <DIR>          es-define-property
+28-05-2025  07:18    <DIR>          es-errors
+28-05-2025  07:18    <DIR>          es-object-atoms
+28-05-2025  07:18    <DIR>          es-set-tostringtag
+28-05-2025  07:18    <DIR>          follow-redirects
+28-05-2025  07:18    <DIR>          form-data
+28-05-2025  07:18    <DIR>          function-bind
+28-05-2025  07:18    <DIR>          get-intrinsic
+28-05-2025  07:18    <DIR>          get-proto
+28-05-2025  07:18    <DIR>          gopd
+28-05-2025  07:18    <DIR>          has-symbols
+28-05-2025  07:18    <DIR>          has-tostringtag
+28-05-2025  07:18    <DIR>          hasown
+28-05-2025  07:18    <DIR>          math-intrinsics
+28-05-2025  07:18    <DIR>          mime-db
+28-05-2025  07:18    <DIR>          mime-types
+28-05-2025  07:18    <DIR>          node-fetch
+28-05-2025  07:18    <DIR>          proxy-from-env
+28-05-2025  07:18    <DIR>          tr46
+28-05-2025  07:18    <DIR>          undici-types
+28-05-2025  07:18    <DIR>          webidl-conversions
+28-05-2025  07:18    <DIR>          whatwg-url
+               1 archivos         13.125 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@notionhq
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          client
+               0 archivos              0 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@notionhq\client
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          build
+28-05-2025  07:18             1.057 LICENSE
+28-05-2025  07:18             1.569 package.json
+28-05-2025  07:18            10.467 README.md
+               3 archivos         13.093 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@notionhq\client\build
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             1.745 package.json
+28-05-2025  07:18    <DIR>          src
+               1 archivos          1.745 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@notionhq\client\build\src
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18           289.746 api-endpoints.d.ts
+28-05-2025  07:18           235.691 api-endpoints.d.ts.map
+28-05-2025  07:18             5.727 api-endpoints.js
+28-05-2025  07:18           317.423 api-endpoints.js.map
+28-05-2025  07:18             7.209 Client.d.ts
+28-05-2025  07:18             3.839 Client.d.ts.map
+28-05-2025  07:18            22.586 Client.js
+28-05-2025  07:18            31.839 Client.js.map
+28-05-2025  07:18             3.659 errors.d.ts
+28-05-2025  07:18             2.253 errors.d.ts.map
+28-05-2025  07:18             7.189 errors.js
+28-05-2025  07:18            13.049 errors.js.map
+28-05-2025  07:18               533 fetch-types.d.ts
+28-05-2025  07:18               657 fetch-types.d.ts.map
+28-05-2025  07:18               116 fetch-types.js
+28-05-2025  07:18             1.645 fetch-types.js.map
+28-05-2025  07:18             4.674 helpers.d.ts
+28-05-2025  07:18             1.955 helpers.d.ts.map
+28-05-2025  07:18             4.545 helpers.js
+28-05-2025  07:18             7.698 helpers.js.map
+28-05-2025  07:18               469 index.d.ts
+28-05-2025  07:18               453 index.d.ts.map
+28-05-2025  07:18             2.742 index.js
+28-05-2025  07:18             1.099 index.js.map
+28-05-2025  07:18               482 logging.d.ts
+28-05-2025  07:18               446 logging.d.ts.map
+28-05-2025  07:18             1.130 logging.js
+28-05-2025  07:18             1.650 logging.js.map
+28-05-2025  07:18               175 type-utils.d.ts
+28-05-2025  07:18               203 type-utils.d.ts.map
+28-05-2025  07:18               170 type-utils.js
+28-05-2025  07:18               291 type-utils.js.map
+28-05-2025  07:18               577 utils.d.ts
+28-05-2025  07:18               492 utils.d.ts.map
+28-05-2025  07:18               844 utils.js
+28-05-2025  07:18             1.340 utils.js.map
+              36 archivos        974.596 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@types
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          node
+28-05-2025  07:18    <DIR>          node-fetch
+               0 archivos              0 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@types\node
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          assert
+28-05-2025  07:18            44.612 assert.d.ts
+28-05-2025  07:18            25.553 async_hooks.d.ts
+28-05-2025  07:18            22.411 buffer.buffer.d.ts
+28-05-2025  07:18            87.857 buffer.d.ts
+28-05-2025  07:18            69.757 child_process.d.ts
+28-05-2025  07:18            28.016 cluster.d.ts
+28-05-2025  07:18    <DIR>          compatibility
+28-05-2025  07:18            21.249 console.d.ts
+28-05-2025  07:18               816 constants.d.ts
+28-05-2025  07:18           189.868 crypto.d.ts
+28-05-2025  07:18            27.991 dgram.d.ts
+28-05-2025  07:18            24.916 diagnostics_channel.d.ts
+28-05-2025  07:18    <DIR>          dns
+28-05-2025  07:18            35.538 dns.d.ts
+28-05-2025  07:18             5.871 dom-events.d.ts
+28-05-2025  07:18             7.812 domain.d.ts
+28-05-2025  07:18            43.169 events.d.ts
+28-05-2025  07:18    <DIR>          fs
+28-05-2025  07:18           189.234 fs.d.ts
+28-05-2025  07:18            14.019 globals.d.ts
+28-05-2025  07:18               777 globals.typedarray.d.ts
+28-05-2025  07:18            88.427 http.d.ts
+28-05-2025  07:18           125.687 http2.d.ts
+28-05-2025  07:18            24.807 https.d.ts
+28-05-2025  07:18             3.868 index.d.ts
+28-05-2025  07:18           198.848 inspector.d.ts
+28-05-2025  07:18             1.141 LICENSE
+28-05-2025  07:18            36.174 module.d.ts
+28-05-2025  07:18            47.708 net.d.ts
+28-05-2025  07:18            18.956 os.d.ts
+28-05-2025  07:18             6.673 package.json
+28-05-2025  07:18             8.235 path.d.ts
+28-05-2025  07:18            38.574 perf_hooks.d.ts
+28-05-2025  07:18           105.790 process.d.ts
+28-05-2025  07:18             5.479 punycode.d.ts
+28-05-2025  07:18             7.125 querystring.d.ts
+28-05-2025  07:18    <DIR>          readline
+28-05-2025  07:18            25.878 readline.d.ts
+28-05-2025  07:18             2.284 README.md
+28-05-2025  07:18            19.507 repl.d.ts
+28-05-2025  07:18             6.195 sea.d.ts
+28-05-2025  07:18            26.142 sqlite.d.ts
+28-05-2025  07:18    <DIR>          stream
+28-05-2025  07:18            85.168 stream.d.ts
+28-05-2025  07:18             2.827 string_decoder.d.ts
+28-05-2025  07:18            93.632 test.d.ts
+28-05-2025  07:18    <DIR>          timers
+28-05-2025  07:18            14.636 timers.d.ts
+28-05-2025  07:18            59.812 tls.d.ts
+28-05-2025  07:18             8.926 trace_events.d.ts
+28-05-2025  07:18    <DIR>          ts5.6
+28-05-2025  07:18            10.053 tty.d.ts
+28-05-2025  07:18            42.696 url.d.ts
+28-05-2025  07:18            98.393 util.d.ts
+28-05-2025  07:18            37.443 v8.d.ts
+28-05-2025  07:18            44.298 vm.d.ts
+28-05-2025  07:18             7.935 wasi.d.ts
+28-05-2025  07:18            36.467 worker_threads.d.ts
+28-05-2025  07:18            25.784 zlib.d.ts
+              52 archivos      2.205.034 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@types\node\assert
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               201 strict.d.ts
+               1 archivos            201 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@types\node\compatibility
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               473 disposable.d.ts
+28-05-2025  07:18               533 index.d.ts
+28-05-2025  07:18             1.195 indexable.d.ts
+28-05-2025  07:18             1.303 iterators.d.ts
+               4 archivos          3.504 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@types\node\dns
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18            20.582 promises.d.ts
+               1 archivos         20.582 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@types\node\fs
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18            55.504 promises.d.ts
+               1 archivos         55.504 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@types\node\readline
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             6.444 promises.d.ts
+               1 archivos          6.444 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@types\node\stream
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             1.593 consumers.d.ts
+28-05-2025  07:18             2.971 promises.d.ts
+28-05-2025  07:18            29.569 web.d.ts
+               3 archivos         34.133 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@types\node\timers
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             3.780 promises.d.ts
+               1 archivos          3.780 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@types\node\ts5.6
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18            21.731 buffer.buffer.d.ts
+28-05-2025  07:18               457 globals.typedarray.d.ts
+28-05-2025  07:18             4.062 index.d.ts
+               3 archivos         26.250 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\@types\node-fetch
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               898 externals.d.ts
+28-05-2025  07:18             6.232 index.d.ts
+28-05-2025  07:18             1.141 LICENSE
+28-05-2025  07:18             2.568 package.json
+28-05-2025  07:18             1.101 README.md
+               5 archivos         11.940 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\asynckit
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             1.256 bench.js
+28-05-2025  07:18               156 index.js
+28-05-2025  07:18    <DIR>          lib
+28-05-2025  07:18             1.078 LICENSE
+28-05-2025  07:18             1.611 package.json
+28-05-2025  07:18             1.017 parallel.js
+28-05-2025  07:18             7.640 README.md
+28-05-2025  07:18               501 serial.js
+28-05-2025  07:18             1.751 serialOrdered.js
+28-05-2025  07:18               703 stream.js
+               9 archivos         15.713 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\asynckit\lib
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               497 abort.js
+28-05-2025  07:18               599 async.js
+28-05-2025  07:18               441 defer.js
+28-05-2025  07:18             1.794 iterate.js
+28-05-2025  07:18             1.611 readable_asynckit.js
+28-05-2025  07:18               673 readable_parallel.js
+28-05-2025  07:18               655 readable_serial.js
+28-05-2025  07:18               941 readable_serial_ordered.js
+28-05-2025  07:18               941 state.js
+28-05-2025  07:18             2.964 streamify.js
+28-05-2025  07:18               533 terminator.js
+              11 archivos         11.649 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18            80.030 CHANGELOG.md
+28-05-2025  07:18    <DIR>          dist
+28-05-2025  07:18            18.408 index.d.cts
+28-05-2025  07:18            18.507 index.d.ts
+28-05-2025  07:18               681 index.js
+28-05-2025  07:18    <DIR>          lib
+28-05-2025  07:18             1.084 LICENSE
+28-05-2025  07:18                37 MIGRATION_GUIDE.md
+28-05-2025  07:18             7.671 package.json
+28-05-2025  07:18            65.112 README.md
+               8 archivos        191.530 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\dist
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18           144.929 axios.js
+28-05-2025  07:18           242.021 axios.js.map
+28-05-2025  07:18            54.249 axios.min.js
+28-05-2025  07:18           171.559 axios.min.js.map
+28-05-2025  07:18    <DIR>          browser
+28-05-2025  07:18    <DIR>          esm
+28-05-2025  07:18    <DIR>          node
+               4 archivos        612.758 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\dist\browser
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18            97.053 axios.cjs
+28-05-2025  07:18           207.497 axios.cjs.map
+               2 archivos        304.550 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\dist\esm
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18            97.929 axios.js
+28-05-2025  07:18           208.773 axios.js.map
+28-05-2025  07:18            35.417 axios.min.js
+28-05-2025  07:18           162.953 axios.min.js.map
+               4 archivos        505.072 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\dist\node
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18           129.390 axios.cjs
+28-05-2025  07:18           273.769 axios.cjs.map
+               2 archivos        403.159 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          adapters
+28-05-2025  07:18             2.549 axios.js
+28-05-2025  07:18    <DIR>          cancel
+28-05-2025  07:18    <DIR>          core
+28-05-2025  07:18    <DIR>          defaults
+28-05-2025  07:18    <DIR>          env
+28-05-2025  07:18    <DIR>          helpers
+28-05-2025  07:18    <DIR>          platform
+28-05-2025  07:18            18.365 utils.js
+               2 archivos         20.914 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\adapters
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             1.970 adapters.js
+28-05-2025  07:18             6.649 fetch.js
+28-05-2025  07:18            22.550 http.js
+28-05-2025  07:18               915 README.md
+28-05-2025  07:18             6.623 xhr.js
+               5 archivos         38.707 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\cancel
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               697 CanceledError.js
+28-05-2025  07:18             2.789 CancelToken.js
+28-05-2025  07:18                99 isCancel.js
+               3 archivos          3.585 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\core
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             6.868 Axios.js
+28-05-2025  07:18             2.546 AxiosError.js
+28-05-2025  07:18             7.395 AxiosHeaders.js
+28-05-2025  07:18               783 buildFullPath.js
+28-05-2025  07:18             2.187 dispatchRequest.js
+28-05-2025  07:18             1.569 InterceptorManager.js
+28-05-2025  07:18             3.415 mergeConfig.js
+28-05-2025  07:18               399 README.md
+28-05-2025  07:18               836 settle.js
+28-05-2025  07:18               778 transformData.js
+              10 archivos         26.776 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\defaults
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             4.479 index.js
+28-05-2025  07:18               118 transitional.js
+               2 archivos          4.597 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\env
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          classes
+28-05-2025  07:18                31 data.js
+28-05-2025  07:18               131 README.md
+               2 archivos            162 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\env\classes
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               106 FormData.js
+               1 archivos            106 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\helpers
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             3.680 AxiosTransformStream.js
+28-05-2025  07:18             1.439 AxiosURLSearchParams.js
+28-05-2025  07:18               134 bind.js
+28-05-2025  07:18             1.659 buildURL.js
+28-05-2025  07:18               372 callbackify.js
+28-05-2025  07:18               382 combineURLs.js
+28-05-2025  07:18             1.364 composeSignals.js
+28-05-2025  07:18             1.045 cookies.js
+28-05-2025  07:18               746 deprecatedMethod.js
+28-05-2025  07:18             2.164 formDataToJSON.js
+28-05-2025  07:18             2.965 formDataToStream.js
+28-05-2025  07:18             1.365 fromDataURI.js
+28-05-2025  07:18             1.600 HttpStatusCode.js
+28-05-2025  07:18               561 isAbsoluteURL.js
+28-05-2025  07:18               373 isAxiosError.js
+28-05-2025  07:18               420 isURLSameOrigin.js
+28-05-2025  07:18                56 null.js
+28-05-2025  07:18             1.382 parseHeaders.js
+28-05-2025  07:18               151 parseProtocol.js
+28-05-2025  07:18             1.235 progressEventReducer.js
+28-05-2025  07:18               318 readBlob.js
+28-05-2025  07:18               351 README.md
+28-05-2025  07:18             2.125 resolveConfig.js
+28-05-2025  07:18             1.092 speedometer.js
+28-05-2025  07:18               564 spread.js
+28-05-2025  07:18               861 throttle.js
+28-05-2025  07:18             6.044 toFormData.js
+28-05-2025  07:18               548 toURLEncodedForm.js
+28-05-2025  07:18             1.686 trackStream.js
+28-05-2025  07:18             2.785 validator.js
+28-05-2025  07:18               681 ZlibHeaderTransformStream.js
+              31 archivos         40.148 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\platform
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          browser
+28-05-2025  07:18    <DIR>          common
+28-05-2025  07:18               130 index.js
+28-05-2025  07:18    <DIR>          node
+               1 archivos            130 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\platform\browser
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          classes
+28-05-2025  07:18               305 index.js
+               1 archivos            305 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\platform\browser\classes
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18                71 Blob.js
+28-05-2025  07:18                81 FormData.js
+28-05-2025  07:18               188 URLSearchParams.js
+               3 archivos            340 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\platform\common
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             1.595 utils.js
+               1 archivos          1.595 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\platform\node
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          classes
+28-05-2025  07:18               828 index.js
+               1 archivos            828 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\axios\lib\platform\node\classes
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18                60 FormData.js
+28-05-2025  07:18                74 URLSearchParams.js
+               2 archivos            134 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\call-bind-apply-helpers
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               232 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18               139 .nycrc
+28-05-2025  07:18                23 actualApply.d.ts
+28-05-2025  07:18               280 actualApply.js
+28-05-2025  07:18               614 applyBind.d.ts
+28-05-2025  07:18               264 applyBind.js
+28-05-2025  07:18             1.938 CHANGELOG.md
+28-05-2025  07:18                34 functionApply.d.ts
+28-05-2025  07:18                99 functionApply.js
+28-05-2025  07:18                33 functionCall.d.ts
+28-05-2025  07:18                97 functionCall.js
+28-05-2025  07:18             2.226 index.d.ts
+28-05-2025  07:18               511 index.js
+28-05-2025  07:18             1.071 LICENSE
+28-05-2025  07:18             2.480 package.json
+28-05-2025  07:18             2.330 README.md
+28-05-2025  07:18                82 reflectApply.d.ts
+28-05-2025  07:18               132 reflectApply.js
+28-05-2025  07:18    <DIR>          test
+28-05-2025  07:18               115 tsconfig.json
+              19 archivos         12.700 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\call-bind-apply-helpers\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               594 FUNDING.yml
+               1 archivos            594 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\call-bind-apply-helpers\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             2.658 index.js
+               1 archivos          2.658 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\combined-stream
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          lib
+28-05-2025  07:18             1.085 License
+28-05-2025  07:18               640 package.json
+28-05-2025  07:18             4.551 Readme.md
+28-05-2025  07:18               551 yarn.lock
+               4 archivos          6.827 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\combined-stream\lib
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             4.687 combined_stream.js
+               1 archivos          4.687 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\delayed-stream
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18                 5 .npmignore
+28-05-2025  07:18    <DIR>          lib
+28-05-2025  07:18             1.085 License
+28-05-2025  07:18                57 Makefile
+28-05-2025  07:18               684 package.json
+28-05-2025  07:18             3.871 Readme.md
+               5 archivos          5.702 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\delayed-stream\lib
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             2.319 delayed_stream.js
+               1 archivos          2.319 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\dunder-proto
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18                43 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18               216 .nycrc
+28-05-2025  07:18             1.547 CHANGELOG.md
+28-05-2025  07:18               121 get.d.ts
+28-05-2025  07:18               980 get.js
+28-05-2025  07:18             1.073 LICENSE
+28-05-2025  07:18             2.108 package.json
+28-05-2025  07:18             1.907 README.md
+28-05-2025  07:18               144 set.d.ts
+28-05-2025  07:18             1.276 set.js
+28-05-2025  07:18    <DIR>          test
+28-05-2025  07:18               116 tsconfig.json
+              11 archivos          9.531 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\dunder-proto\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               583 FUNDING.yml
+               1 archivos            583 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\dunder-proto\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             1.143 get.js
+28-05-2025  07:18                51 index.js
+28-05-2025  07:18             1.695 set.js
+               3 archivos          2.889 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\es-define-property
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               144 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18               139 .nycrc
+28-05-2025  07:18             2.296 CHANGELOG.md
+28-05-2025  07:18                93 index.d.ts
+28-05-2025  07:18               288 index.js
+28-05-2025  07:18             1.071 LICENSE
+28-05-2025  07:18             2.129 package.json
+28-05-2025  07:18             2.056 README.md
+28-05-2025  07:18    <DIR>          test
+28-05-2025  07:18               138 tsconfig.json
+               9 archivos          8.354 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\es-define-property\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               564 FUNDING.yml
+               1 archivos            564 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\es-define-property\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             1.299 index.js
+               1 archivos          1.299 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\es-errors
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18                43 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18             1.833 CHANGELOG.md
+28-05-2025  07:18                68 eval.d.ts
+28-05-2025  07:18                75 eval.js
+28-05-2025  07:18                56 index.d.ts
+28-05-2025  07:18                66 index.js
+28-05-2025  07:18             1.071 LICENSE
+28-05-2025  07:18             2.174 package.json
+28-05-2025  07:18                71 range.d.ts
+28-05-2025  07:18                77 range.js
+28-05-2025  07:18             2.114 README.md
+28-05-2025  07:18                83 ref.d.ts
+28-05-2025  07:18                79 ref.js
+28-05-2025  07:18                74 syntax.d.ts
+28-05-2025  07:18                79 syntax.js
+28-05-2025  07:18    <DIR>          test
+28-05-2025  07:18             3.170 tsconfig.json
+28-05-2025  07:18                67 type.d.ts
+28-05-2025  07:18                75 type.js
+28-05-2025  07:18                65 uri.d.ts
+28-05-2025  07:18                73 uri.js
+              20 archivos         11.413 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\es-errors\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               555 FUNDING.yml
+               1 archivos            555 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\es-errors\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               356 index.js
+               1 archivos            356 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\es-object-atoms
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               229 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18             2.136 CHANGELOG.md
+28-05-2025  07:18                59 index.d.ts
+28-05-2025  07:18                67 index.js
+28-05-2025  07:18                72 isObject.d.ts
+28-05-2025  07:18               161 isObject.js
+28-05-2025  07:18             1.071 LICENSE
+28-05-2025  07:18             2.273 package.json
+28-05-2025  07:18             2.603 README.md
+28-05-2025  07:18               123 RequireObjectCoercible.d.ts
+28-05-2025  07:18               313 RequireObjectCoercible.js
+28-05-2025  07:18    <DIR>          test
+28-05-2025  07:18               352 ToObject.d.ts
+28-05-2025  07:18               250 ToObject.js
+28-05-2025  07:18                81 tsconfig.json
+              14 archivos          9.790 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\es-object-atoms\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               555 FUNDING.yml
+               1 archivos            555 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\es-object-atoms\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             1.097 index.js
+               1 archivos          1.097 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\es-set-tostringtag
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               138 .eslintrc
+28-05-2025  07:18               139 .nycrc
+28-05-2025  07:18             4.968 CHANGELOG.md
+28-05-2025  07:18               236 index.d.ts
+28-05-2025  07:18             1.213 index.js
+28-05-2025  07:18             1.073 LICENSE
+28-05-2025  07:18             2.193 package.json
+28-05-2025  07:18             2.233 README.md
+28-05-2025  07:18    <DIR>          test
+28-05-2025  07:18               116 tsconfig.json
+               9 archivos         12.309 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\es-set-tostringtag\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             2.235 index.js
+               1 archivos          2.235 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\follow-redirects
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               315 debug.js
+28-05-2025  07:18                37 http.js
+28-05-2025  07:18                38 https.js
+28-05-2025  07:18            20.647 index.js
+28-05-2025  07:18             1.136 LICENSE
+28-05-2025  07:18             1.289 package.json
+28-05-2025  07:18             6.456 README.md
+               7 archivos         29.918 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\form-data
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             1.825 index.d.ts
+28-05-2025  07:18    <DIR>          lib
+28-05-2025  07:18             1.118 License
+28-05-2025  07:18             2.535 package.json
+28-05-2025  07:18            12.070 Readme.md
+               4 archivos         17.548 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\form-data\lib
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               101 browser.js
+28-05-2025  07:18            14.010 form_data.js
+28-05-2025  07:18               177 populate.js
+               3 archivos         14.288 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\function-bind
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               253 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18               216 .nycrc
+28-05-2025  07:18            13.812 CHANGELOG.md
+28-05-2025  07:18             2.043 implementation.js
+28-05-2025  07:18               126 index.js
+28-05-2025  07:18             1.052 LICENSE
+28-05-2025  07:18             2.262 package.json
+28-05-2025  07:18             1.755 README.md
+28-05-2025  07:18    <DIR>          test
+               8 archivos         21.519 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\function-bind\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               584 FUNDING.yml
+28-05-2025  07:18               157 SECURITY.md
+               2 archivos            741 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\function-bind\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               176 .eslintrc
+28-05-2025  07:18             8.991 index.js
+               2 archivos          9.167 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\get-intrinsic
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               647 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18               139 .nycrc
+28-05-2025  07:18            15.537 CHANGELOG.md
+28-05-2025  07:18            14.439 index.js
+28-05-2025  07:18             1.071 LICENSE
+28-05-2025  07:18             2.576 package.json
+28-05-2025  07:18             2.791 README.md
+28-05-2025  07:18    <DIR>          test
+               7 archivos         37.200 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\get-intrinsic\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               584 FUNDING.yml
+               1 archivos            584 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\get-intrinsic\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             8.758 GetIntrinsic.js
+               1 archivos          8.758 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\get-proto
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               104 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18               139 .nycrc
+28-05-2025  07:18             1.054 CHANGELOG.md
+28-05-2025  07:18               126 index.d.ts
+28-05-2025  07:18               821 index.js
+28-05-2025  07:18             1.071 LICENSE
+28-05-2025  07:18               125 Object.getPrototypeOf.d.ts
+28-05-2025  07:18               156 Object.getPrototypeOf.js
+28-05-2025  07:18             2.176 package.json
+28-05-2025  07:18             1.794 README.md
+28-05-2025  07:18                67 Reflect.getPrototypeOf.d.ts
+28-05-2025  07:18               150 Reflect.getPrototypeOf.js
+28-05-2025  07:18    <DIR>          test
+28-05-2025  07:18               118 tsconfig.json
+              13 archivos          7.901 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\get-proto\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               580 FUNDING.yml
+               1 archivos            580 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\get-proto\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             2.359 index.js
+               1 archivos          2.359 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\gopd
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               224 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18             3.077 CHANGELOG.md
+28-05-2025  07:18                42 gOPD.d.ts
+28-05-2025  07:18                97 gOPD.js
+28-05-2025  07:18               173 index.d.ts
+28-05-2025  07:18               206 index.js
+28-05-2025  07:18             1.071 LICENSE
+28-05-2025  07:18             2.070 package.json
+28-05-2025  07:18             1.562 README.md
+28-05-2025  07:18    <DIR>          test
+28-05-2025  07:18               116 tsconfig.json
+              10 archivos          8.638 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\gopd\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               575 FUNDING.yml
+               1 archivos            575 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\gopd\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               656 index.js
+               1 archivos            656 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\has-symbols
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               164 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18               139 .nycrc
+28-05-2025  07:18             9.431 CHANGELOG.md
+28-05-2025  07:18                73 index.d.ts
+28-05-2025  07:18               447 index.js
+28-05-2025  07:18             1.071 LICENSE
+28-05-2025  07:18             2.974 package.json
+28-05-2025  07:18             2.044 README.md
+28-05-2025  07:18                69 shams.d.ts
+28-05-2025  07:18             1.922 shams.js
+28-05-2025  07:18    <DIR>          test
+28-05-2025  07:18               143 tsconfig.json
+              11 archivos         18.477 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\has-symbols\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               582 FUNDING.yml
+               1 archivos            582 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\has-symbols\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               654 index.js
+28-05-2025  07:18    <DIR>          shams
+28-05-2025  07:18             2.139 tests.js
+               2 archivos          2.793 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\has-symbols\test\shams
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               797 core-js.js
+28-05-2025  07:18               760 get-own-property-symbols.js
+               2 archivos          1.557 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\has-tostringtag
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18                43 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18               216 .nycrc
+28-05-2025  07:18             3.543 CHANGELOG.md
+28-05-2025  07:18                70 index.d.ts
+28-05-2025  07:18               196 index.js
+28-05-2025  07:18             1.067 LICENSE
+28-05-2025  07:18             2.838 package.json
+28-05-2025  07:18             2.190 README.md
+28-05-2025  07:18                80 shams.d.ts
+28-05-2025  07:18               189 shams.js
+28-05-2025  07:18    <DIR>          test
+28-05-2025  07:18             3.611 tsconfig.json
+              11 archivos         14.043 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\has-tostringtag\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               586 FUNDING.yml
+               1 archivos            586 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\has-tostringtag\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               679 index.js
+28-05-2025  07:18    <DIR>          shams
+28-05-2025  07:18               532 tests.js
+               2 archivos          1.211 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\has-tostringtag\test\shams
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               935 core-js.js
+28-05-2025  07:18               828 get-own-property-symbols.js
+               2 archivos          1.763 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\hasown
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18                43 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18               216 .nycrc
+28-05-2025  07:18             2.579 CHANGELOG.md
+28-05-2025  07:18               117 index.d.ts
+28-05-2025  07:18               206 index.js
+28-05-2025  07:18             1.083 LICENSE
+28-05-2025  07:18             2.283 package.json
+28-05-2025  07:18             1.613 README.md
+28-05-2025  07:18                73 tsconfig.json
+               9 archivos          8.213 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\hasown\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               552 FUNDING.yml
+               1 archivos            552 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\math-intrinsics
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               229 .eslintrc
+28-05-2025  07:18    <DIR>          .github
+28-05-2025  07:18                18 abs.d.ts
+28-05-2025  07:18                73 abs.js
+28-05-2025  07:18             1.466 CHANGELOG.md
+28-05-2025  07:18    <DIR>          constants
+28-05-2025  07:18                20 floor.d.ts
+28-05-2025  07:18                77 floor.js
+28-05-2025  07:18                80 isFinite.d.ts
+28-05-2025  07:18               262 isFinite.js
+28-05-2025  07:18                87 isInteger.d.ts
+28-05-2025  07:18               410 isInteger.js
+28-05-2025  07:18                22 isNaN.d.ts
+28-05-2025  07:18               121 isNaN.js
+28-05-2025  07:18                79 isNegativeZero.d.ts
+28-05-2025  07:18               143 isNegativeZero.js
+28-05-2025  07:18             1.073 LICENSE
+28-05-2025  07:18                18 max.d.ts
+28-05-2025  07:18                73 max.js
+28-05-2025  07:18                18 min.d.ts
+28-05-2025  07:18                73 min.js
+28-05-2025  07:18                76 mod.d.ts
+28-05-2025  07:18               218 mod.js
+28-05-2025  07:18             2.670 package.json
+28-05-2025  07:18                18 pow.d.ts
+28-05-2025  07:18                73 pow.js
+28-05-2025  07:18             1.884 README.md
+28-05-2025  07:18                20 round.d.ts
+28-05-2025  07:18                77 round.js
+28-05-2025  07:18                57 sign.d.ts
+28-05-2025  07:18               214 sign.js
+28-05-2025  07:18    <DIR>          test
+28-05-2025  07:18                36 tsconfig.json
+              30 archivos          9.685 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\math-intrinsics\.github
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               561 FUNDING.yml
+               1 archivos            561 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\math-intrinsics\constants
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18                71 maxArrayLength.d.ts
+28-05-2025  07:18               110 maxArrayLength.js
+28-05-2025  07:18                77 maxSafeInteger.d.ts
+28-05-2025  07:18               231 maxSafeInteger.js
+28-05-2025  07:18                71 maxValue.d.ts
+28-05-2025  07:18               197 maxValue.js
+               6 archivos            757 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\math-intrinsics\test
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             6.320 index.js
+               1 archivos          6.320 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\mime-db
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18           185.882 db.json
+28-05-2025  07:18            12.581 HISTORY.md
+28-05-2025  07:18               189 index.js
+28-05-2025  07:18             1.172 LICENSE
+28-05-2025  07:18             1.624 package.json
+28-05-2025  07:18             4.091 README.md
+               6 archivos        205.539 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\mime-types
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             8.812 HISTORY.md
+28-05-2025  07:18             3.663 index.js
+28-05-2025  07:18             1.167 LICENSE
+28-05-2025  07:18             1.149 package.json
+28-05-2025  07:18             3.481 README.md
+               5 archivos         18.272 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\node-fetch
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               781 browser.js
+28-05-2025  07:18    <DIR>          lib
+28-05-2025  07:18             1.079 LICENSE.md
+28-05-2025  07:18             2.668 package.json
+28-05-2025  07:18            21.332 README.md
+               4 archivos         25.860 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\node-fetch\lib
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18            45.346 index.es.js
+28-05-2025  07:18            45.775 index.js
+28-05-2025  07:18            45.272 index.mjs
+               3 archivos        136.393 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\proxy-from-env
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               743 .eslintrc
+28-05-2025  07:18               328 .travis.yml
+28-05-2025  07:18             3.348 index.js
+28-05-2025  07:18             1.087 LICENSE
+28-05-2025  07:18               956 package.json
+28-05-2025  07:18             5.270 README.md
+28-05-2025  07:18            17.720 test.js
+               7 archivos         29.452 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\tr46
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18                40 .npmignore
+28-05-2025  07:18             7.567 index.js
+28-05-2025  07:18    <DIR>          lib
+28-05-2025  07:18               732 package.json
+               3 archivos          8.339 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\tr46\lib
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18                 0 .gitkeep
+28-05-2025  07:18           260.049 mappingTable.json
+               2 archivos        260.049 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\undici-types
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             1.065 agent.d.ts
+28-05-2025  07:18             1.455 api.d.ts
+28-05-2025  07:18               961 balanced-pool.d.ts
+28-05-2025  07:18             1.251 cache.d.ts
+28-05-2025  07:18             4.964 client.d.ts
+28-05-2025  07:18             1.029 connector.d.ts
+28-05-2025  07:18               561 content-type.d.ts
+28-05-2025  07:18               635 cookies.d.ts
+28-05-2025  07:18             1.579 diagnostics-channel.d.ts
+28-05-2025  07:18            14.222 dispatcher.d.ts
+28-05-2025  07:18               675 env-http-proxy-agent.d.ts
+28-05-2025  07:18             4.280 errors.d.ts
+28-05-2025  07:18             1.648 eventsource.d.ts
+28-05-2025  07:18             5.575 fetch.d.ts
+28-05-2025  07:18             1.707 file.d.ts
+28-05-2025  07:18             1.433 filereader.d.ts
+28-05-2025  07:18             4.998 formdata.d.ts
+28-05-2025  07:18               276 global-dispatcher.d.ts
+28-05-2025  07:18               175 global-origin.d.ts
+28-05-2025  07:18               447 handlers.d.ts
+28-05-2025  07:18               133 header.d.ts
+28-05-2025  07:18             3.387 index.d.ts
+28-05-2025  07:18               922 interceptors.d.ts
+28-05-2025  07:18             1.090 LICENSE
+28-05-2025  07:18             2.535 mock-agent.d.ts
+28-05-2025  07:18             1.002 mock-client.d.ts
+28-05-2025  07:18               338 mock-errors.d.ts
+28-05-2025  07:18             3.902 mock-interceptor.d.ts
+28-05-2025  07:18               974 mock-pool.d.ts
+28-05-2025  07:18             1.193 package.json
+28-05-2025  07:18               691 patch.d.ts
+28-05-2025  07:18               669 pool-stats.d.ts
+28-05-2025  07:18             1.336 pool.d.ts
+28-05-2025  07:18               780 proxy-agent.d.ts
+28-05-2025  07:18             1.738 readable.d.ts
+28-05-2025  07:18               455 README.md
+28-05-2025  07:18               232 retry-agent.d.ts
+28-05-2025  07:18             2.983 retry-handler.d.ts
+28-05-2025  07:18               623 util.d.ts
+28-05-2025  07:18             5.921 webidl.d.ts
+28-05-2025  07:18             3.840 websocket.d.ts
+              41 archivos         83.680 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\webidl-conversions
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          lib
+28-05-2025  07:18             1.323 LICENSE.md
+28-05-2025  07:18               511 package.json
+28-05-2025  07:18             5.480 README.md
+               3 archivos          7.314 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\webidl-conversions\lib
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18             5.056 index.js
+               1 archivos          5.056 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\whatwg-url
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18    <DIR>          lib
+28-05-2025  07:18             1.088 LICENSE.txt
+28-05-2025  07:18               886 package.json
+28-05-2025  07:18             5.136 README.md
+               3 archivos          7.110 bytes
+
+ Directorio de C:\openpose\selen-api\node_modules\whatwg-url\lib
+
+28-05-2025  07:18    <DIR>          .
+28-05-2025  07:18    <DIR>          ..
+28-05-2025  07:18               625 public-api.js
+28-05-2025  07:18             3.804 URL-impl.js
+28-05-2025  07:18            33.573 url-state-machine.js
+28-05-2025  07:18             4.212 URL.js
+28-05-2025  07:18               562 utils.js
+               5 archivos         42.776 bytes
+
+     Total de archivos en la lista:
+            1332 archivos     19.316.202 bytes
+            1078 dirs  19.364.843.520 bytes libres
+
+
+✅ 3. ¿Estás desplegando desde la carpeta correcta?
+C:\Users\counq>cd C:\openpose\selen-api
+
+C:\openpose\selen-api>vercel --prod --force
+Vercel CLI 42.2.0
+🔍  Inspect: https://vercel.com/felipegs-projects-5134ac28/vercel-bot/LDaTfEMEQrLv8kJvXvtojTDJySzD [864ms]
+✅  Production: https://vercel-gp5zyq5pg-felipegs-projects-5134ac28.vercel.app [865ms]
+❗️  Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings

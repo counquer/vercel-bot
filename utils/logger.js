@@ -1,8 +1,8 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 
 const ENV = process.env.NODE_ENV || "development";
-const LOG_FILE = process.env.LOG_FILE || path.join(__dirname, "../logs/app.log");
+const LOG_FILE = process.env.LOG_FILE || path.join(path.dirname(new URL(import.meta.url).pathname), "../logs/app.log");
 
 const COLORS = {
   reset: "\x1b[0m",
@@ -66,4 +66,4 @@ const logger = {
   }
 };
 
-module.exports = logger;
+export default logger;
