@@ -40,5 +40,6 @@ if "%ERRLVL%"=="0" (
 ) else (
     echo [ERROR] El script terminó con error (código %ERRLVL%).
 )
+
 pause
 endlocal

@@ -4,7 +4,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node services/syncService.js"
+    "start": "node services/syncService.js",
+    "dev": "node api/selen.js"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.4",
