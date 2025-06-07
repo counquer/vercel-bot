@@ -1,9 +1,16 @@
-import validateEnvVars from "../config/envValidator.js";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+import validateEnvVars, { checkAutomationBypass } from "../config/envValidator.js";
 import { normalize } from "../utils/triggerUtils.js";
 import notionService from "../notion/notionService.js";
 import grokService from "../grok/grokService.js";
 import cacheService from "../cache/cacheService.js";
 import logger from "../utils/logger.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 
 // Validar variables de entorno al inicio
 validateEnvVars();
