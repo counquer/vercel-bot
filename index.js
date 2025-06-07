@@ -1,4 +1,5 @@
-//import express from "express";
+//import express from "express"
+import express from "express";
 import dotenv from "dotenv";
 import validateEnvVars from "./config/envValidator.js";
 import selenHandler from "./api/selen.js";
