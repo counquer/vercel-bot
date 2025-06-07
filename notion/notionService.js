@@ -16,7 +16,7 @@ function sanitizarYCodificar(texto) {
 }
 
 /**
- * Guarda una memoria curada en Notion con clave, sección, contenido y timestamp.
+ * Guarda una memoria curada en Notion con clave, sección, contenido, emocionalidad, timestamp y enlace contextual.
  */
 async function guardarMemoriaCurada(memoria) {
   try {
@@ -24,23 +24,34 @@ async function guardarMemoriaCurada(memoria) {
     const seccion = memoria.seccion?.trim() || "general";
     const contenido = sanitizarYCodificar(memoria.contenido || "");
     const timestamp = memoria.timestamp || new Date().toISOString();
+    const emocionalidad = memoria.emocionalidad || "neutro";
+    const enlace = memoria.enlace || null;
+
+    const propiedades = {
+      Clave: {
+        title: [{ text: { content: clave } }],
+      },
+      Sección: {
+        select: { name: seccion },
+      },
+      Contenido: {
+        rich_text: [{ text: { content: contenido } }],
+      },
+      Timestamp: {
+        date: { start: timestamp },
+      },
+      Emocionalidad: {
+        rich_text: [{ text: { content: emocionalidad } }],
+      },
+    };
+
+    if (enlace) {
+      propiedades.Enlace = { url: enlace };
+    }
 
     const response = await notion.pages.create({
       parent: { database_id: DATABASE_ID },
-      properties: {
-        Clave: {
-          title: [{ text: { content: clave } }],
-        },
-        Sección: {
-          select: { name: seccion },
-        },
-        Contenido: {
-          rich_text: [{ text: { content: contenido } }],
-        },
-        Timestamp: {
-          date: { start: timestamp },
-        },
-      },
+      properties: propiedades,
     });
 
     if (!response || !response.id) {
