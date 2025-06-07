@@ -15,26 +15,6 @@ const __dirname = dirname(__filename);
 // Validar variables de entorno al inicio
 validateEnvVars();
 
-// Ejecución directa desde CLI: node selen.js --trigger=cochinavenami
-if (require.main === module) {
-  const triggerArg = process.argv.find(arg => arg.startsWith('--trigger='));
-  if (!triggerArg) {
-    console.error("Debes especificar un trigger con --trigger=...");
-    process.exit(1);
-  }
-
-  const triggerRaw = triggerArg.split("=")[1];
-  ejecutarTrigger(triggerRaw)
-    .then(res => {
-      console.log("\n--- RESPUESTA SELEN CLI ---");
-      console.log(JSON.stringify(res, null, 2));
-    })
-    .catch(err => {
-      console.error("Error ejecutando trigger:", err.message);
-      process.exit(1);
-    });
-}
-
 // Handler para API POST
 export default async function handler(req, res) {
   logger.info("selen", "Solicitud recibida en /api/selen:", req.method, req.url);
