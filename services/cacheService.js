@@ -1,4 +1,4 @@
-// s// services/cacheService.js
+// services/cacheService.js
 
 const cache = new Map();
 
@@ -28,12 +28,11 @@ const cacheService = {
   },
 
   check() {
-    return true;
+    return true; // Hook de prueba para health.js
   },
 
-  // 🔧 Esta es la función que te falta
   generateKey(trigger) {
-    return `trigger:${trigger.trim().toLowerCase()}`;
+    return `trigger-${trigger.trim().toLowerCase()}`;
   }
 };
 
