@@ -1,3 +1,5 @@
+// notion/notionService.js
+
 import { Client } from "@notionhq/client";
 import dotenv from "dotenv";
 import logger from "../utils/logger.js";
@@ -13,6 +15,34 @@ function sanitizarYCodificar(texto) {
   if (typeof texto !== "string") return "";
   const limpio = texto.trim().replace(/[\u0000-\u001F\u007F-\u009F]/g, "");
   return unescape(encodeURIComponent(limpio));
+}
+
+/**
+ * Busca memorias por clave en la base de datos de Notion
+ */
+async function findTriggerContents(clave) {
+  try {
+    const response = await notion.databases.query({
+      database_id: DATABASE_ID,
+      filter: {
+        property: "Clave",
+        title: {
+          equals: clave,
+        },
+      },
+    });
+
+    const contenidos = response.results.map((page) => {
+      const contenido = page.properties?.Contenido?.rich_text?.[0]?.text?.content || "";
+      return contenido;
+    }).filter(Boolean);
+
+    logger.info("notion", `Se encontraron ${contenidos.length} memorias para clave '${clave}'`);
+    return contenidos;
+  } catch (error) {
+    logger.error("notion", "Error al consultar Notion:", error.message);
+    throw error;
+  }
 }
 
 /**
@@ -68,5 +98,6 @@ async function guardarMemoriaCurada(memoria) {
 }
 
 export default {
-  guardarMemoriaCurada
+  guardarMemoriaCurada,
+  findTriggerContents,
 };
