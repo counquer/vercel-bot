@@ -69,7 +69,7 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(3000, () => {
+server.listen(4000, () => {
   console.log('¡El fuego de Selen se enciende! Servidor corriendo en http://localhost:3000/api/selen');
 });
 
