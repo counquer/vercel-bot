@@ -1,11 +1,6 @@
-// services/cacheService.js
+// s// services/cacheService.js
 
 const cache = new Map();
-
-function generateKey(trigger) {
-  if (typeof trigger !== "string") return "memoria-sin-clave";
-  return `memoria-${trigger.trim().toLowerCase().replace(/\s+/g, '-')}`;
-}
 
 const cacheService = {
   get(key) {
@@ -36,7 +31,10 @@ const cacheService = {
     return true;
   },
 
-  generateKey
+  // 🔧 Esta es la función que te falta
+  generateKey(trigger) {
+    return `trigger:${trigger.trim().toLowerCase()}`;
+  }
 };
 
 export default cacheService;
