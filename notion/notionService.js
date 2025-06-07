@@ -6,7 +6,8 @@ import logger from "../utils/logger.js";
 dotenv.config();
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
-const DATABASE_ID = process.env.DB_MEMORIA_CURADA;
+const DB_MEMORIA_CURADA = process.env.DB_MEMORIA_CURADA;
+const DB_TRIGGERS = process.env.DB_TRIGGERS;
 
 /**
  * Limpia texto: remueve caracteres invisibles y codifica como UTF-8 seguro.
@@ -18,12 +19,12 @@ function sanitizarYCodificar(texto) {
 }
 
 /**
- * Busca memorias por clave en la base de datos de Notion
+ * Busca memorias por clave en la base DB_TRIGGERS (no en la curada).
  */
 async function findTriggerContents(clave) {
   try {
     const response = await notion.databases.query({
-      database_id: DATABASE_ID,
+      database_id: DB_TRIGGERS,
       filter: {
         property: "Clave",
         title: {
@@ -80,7 +81,7 @@ async function guardarMemoriaCurada(memoria) {
     }
 
     const response = await notion.pages.create({
-      parent: { database_id: DATABASE_ID },
+      parent: { database_id: DB_MEMORIA_CURADA },
       properties: propiedades,
     });
 
