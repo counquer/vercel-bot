@@ -1,12 +1,12 @@
-{
+{{
   "name": "selen-api",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node services/syncService.js",
-    "dev": "node api/selen.js"
-	"lint": "eslint . --ext .js"
+    "dev": "node api/selen.js",
+    "lint": "eslint . --ext .js"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.4",
