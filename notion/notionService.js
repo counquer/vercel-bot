@@ -81,7 +81,7 @@ const propiedades = {
     select: { name: seccion },
   },
   Contenido: {
-    rich_text: [{ text: { content: contenido } }],
+   const contenidoLimitado = contenido.slice(0, 2000);
   },
   Timestamp: {
     date: { start: timestamp },
