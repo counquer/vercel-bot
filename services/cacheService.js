@@ -2,6 +2,11 @@
 
 const cache = new Map();
 
+function generateKey(trigger) {
+  if (typeof trigger !== "string") return "memoria-sin-clave";
+  return `memoria-${trigger.trim().toLowerCase().replace(/\s+/g, '-')}`;
+}
+
 const cacheService = {
   get(key) {
     return cache.has(key) ? cache.get(key).value : null;
@@ -28,8 +33,10 @@ const cacheService = {
   },
 
   check() {
-    return true; // Hook de prueba para health.js
-  }
+    return true;
+  },
+
+  generateKey
 };
 
 export default cacheService;
