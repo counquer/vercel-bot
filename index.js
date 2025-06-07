@@ -1,12 +1,10 @@
-//import express from "express"
-import express from "express";
 import dotenv from "dotenv";
+dotenv.config(); // ✅ Esto debe ir antes que todo lo que use process.env
+
+import express from "express";
 import validateEnvVars from "./config/envValidator.js";
 import selenHandler from "./api/selen.js";
 import logger from "./utils/logger.js";
-
-// Cargar variables de entorno desde .env
-dotenv.config();
 
 // Validar que todas las vars necesarias estén disponibles
 validateEnvVars();
