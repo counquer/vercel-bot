@@ -9,7 +9,8 @@
     "@eslint/js": "^9.0.0",
     "eslint": "^9.0.0",
     "eslint-plugin-n": "^16.4.0",
-    "globals": "^13.24.0"
+    "globals": "^13.24.0",
+    "jsonlint": "^1.6.3"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.4",
