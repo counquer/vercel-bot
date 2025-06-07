@@ -1,19 +1,69 @@
-// api/saveToNotion.js
-const withErrorHandling = require('../utils/withErrorHandling');
+// notionService.js
+import { Client } from "@notionhq/client";
+import dotenv from "dotenv";
+dotenv.config();
 
-module.exports = withErrorHandling(async (req, res) => {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Método no permitido' });
+const notion = new Client({ auth: process.env.NOTION_API_KEY });
+const DATABASE_ID = process.env.DB_MEMORIA_CURADA;
+
+function pageToMemoria(page) {
+  return {
+    id: page.id,
+    respuesta: page.properties.Respuesta?.rich_text?.[0]?.plain_text || "",
+    timestamp: page.properties.Timestamp?.date?.start || "",
+  };
+}
+
+async function obtenerTodasMemoriasCuradas() {
+  let results = [];
+  let cursor = undefined;
+
+  try {
+    do {
+      const response = await notion.databases.query({
+        database_id: DATABASE_ID,
+        start_cursor: cursor,
+        page_size: 100,
+      });
+      results = results.concat(response.results);
+      cursor = response.has_more ? response.next_cursor : undefined;
+    } while (cursor);
+
+    return results.map(pageToMemoria);
+  } catch (error) {
+    console.error("❌ Error consultando Notion:", error.message);
+    return [];
   }
+}
 
-  const { title } = req.body;
+async function guardarMemoriaCurada(memoria) {
+  try {
+    const response = await notion.pages.create({
+      parent: { database_id: DATABASE_ID },
+      properties: {
+        Respuesta: {
+          rich_text: [{ text: { content: memoria.respuesta || "Sin respuesta" } }],
+        },
+        Timestamp: {
+          date: { start: memoria.timestamp || new Date().toISOString() },
+        },
+        // Se pueden agregar campos extra aquí si los tienes en la DB de Notion
+        // Emocionalidad, Trigger, Categoría, etc.
+      },
+    });
 
-  if (!title) {
-    return res.status(422).json({ error: 'Falta el campo "title"' });
+    if (!response || response.object !== "page") {
+      throw new Error("Notion no devolvió una página válida");
+    }
+
+    return response;
+  } catch (error) {
+    console.error("❌ Error guardando en Notion:", error.message);
+    throw error;
   }
+}
 
-  // Aquí iría tu lógica real de guardar en Notion
-  // await saveToNotion(title);
-
-  res.status(200).json({ success: true, message: 'Guardado OK' });
-});
+export default {
+  obtenerTodasMemoriasCuradas,
+  guardarMemoriaCurada,
+};

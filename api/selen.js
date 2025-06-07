@@ -85,14 +85,15 @@ async function ejecutarTrigger(triggerRaw) {
   const promptFinal = `Selen, responde con toda tu simbiosis y contexto historico:\n\n${contenidos.join("\n---\n")}`;
   const respuestaGrok = await grokService.completar(promptFinal);
 
-  // Guarda resultado en Notion (memoria curada)
+  // Guarda resultado en Notion (memoria curada con estructura final)
   await notionService.guardarMemoriaCurada({
-    respuesta: respuestaGrok,
-    emocionalidad: "neutro",
-    timestamp: new Date().toISOString(),
+    clave: trigger,
+    seccion: "respuesta",
+    contenido: respuestaGrok,
+    timestamp: new Date().toISOString()
   });
 
-  // Actualiza caché
+  // Actualiza caché solo si todo fue exitoso
   cacheService.set(cacheKey, { contenidos, timestamp: Date.now() });
 
   return {
