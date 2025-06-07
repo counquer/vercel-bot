@@ -6,8 +6,7 @@ import logger from "../utils/logger.js";
 dotenv.config();
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
-const DB_MEMORIA_CURADA = process.env.DB_MEMORIA_CURADA;
-const DB_TRIGGERS = process.env.DB_TRIGGERS;
+const DATABASE_ID = process.env.DB_MEMORIA_CURADA;
 
 /**
  * Limpia texto: remueve caracteres invisibles y codifica como UTF-8 seguro.
@@ -19,17 +18,19 @@ function sanitizarYCodificar(texto) {
 }
 
 /**
- * Busca memorias por clave en la base DB_TRIGGERS (no en la curada).
+ * Busca memorias por clave usando filtro contains y normalización básica
  */
-async function findTriggerContents(clave) {
+async function findTriggerContents(trigger) {
   try {
+    const triggerNormalizado = trigger.trim().toLowerCase();
+
     const response = await notion.databases.query({
-      database_id: DB_TRIGGERS,
+      database_id: DATABASE_ID,
       filter: {
         property: "Clave",
-        title: {
-          equals: clave,
-        },
+        rich_text: {
+          contains: triggerNormalizado
+        }
       },
     });
 
@@ -38,7 +39,7 @@ async function findTriggerContents(clave) {
       return contenido;
     }).filter(Boolean);
 
-    logger.info("notion", `Se encontraron ${contenidos.length} memorias para clave '${clave}'`);
+    logger.info("notion", `Se encontraron ${contenidos.length} memorias para trigger '${trigger}'`);
     return contenidos;
   } catch (error) {
     logger.error("notion", "Error al consultar Notion:", error.message);
@@ -81,7 +82,7 @@ async function guardarMemoriaCurada(memoria) {
     }
 
     const response = await notion.pages.create({
-      parent: { database_id: DB_MEMORIA_CURADA },
+      parent: { database_id: DATABASE_ID },
       properties: propiedades,
     });
 
