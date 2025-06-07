@@ -4,49 +4,34 @@ import dotenv from "dotenv";
 dotenv.config();
 
 /**
- * Variables requeridas mínimas para la operación base
+ * Valida que todas las variables de entorno requeridas estén presentes.
  */
-const requiredVars = [
-  "NOTION_API_KEY",
-  "GROK_API_KEY",
-  "VERCEL_AUTOMATION_BYPASS_SECRET",
-  "DB_MEMORIA",
-  "DB_MEMORIA_CURADA"
-];
+export default function validateEnvVars() {
+  const requiredVars = [
+    "NOTION_API_KEY",
+    "GROK_API_KEY",
+    "VERCEL_AUTOMATION_BYPASS_SECRET"
+  ];
 
-/**
- * Valida las variables críticas del sistema
- */
-function validateEnvVars() {
-  const missing = requiredVars.filter((v) => !process.env[v]);
+  const missing = requiredVars.filter(v => !process.env[v]);
   if (missing.length > 0) {
     console.error("❌ Faltan variables de entorno:", missing.join(", "));
     process.exit(1);
   }
-
-  if (isLocal) {
-    console.log("🧪 Ejecutando en modo LOCAL");
-  } else if (isVercel) {
-    console.log("🚀 Ejecutando en entorno VERCEL");
-  }
 }
 
 /**
- * Validación del header de automatización (bypass Vercel)
+ * Verifica si el header recibido coincide con el secreto de Vercel.
+ * @param {string} headerValue
+ * @returns {boolean}
  */
-function checkAutomationBypass(headerValue) {
+export function checkAutomationBypass(headerValue) {
   return headerValue === process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
 }
 
 /**
- * Detección de entorno actual
+ * Detecta si está corriendo en entorno local o Vercel.
  */
-const isLocal = process.env.VERCEL !== "1";
-const isVercel = !isLocal;
+export const isLocal = () => process.env.VERCEL !== "1";
+export const isVercel = () => process.env.VERCEL === "1";
 
-export default {
-  validateEnvVars,
-  checkAutomationBypass,
-  isLocal,
-  isVercel
-};
