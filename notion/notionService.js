@@ -1,5 +1,3 @@
-// notion/notionService.js
-
 import { Client } from "@notionhq/client";
 import dotenv from "dotenv";
 import logger from "../utils/logger.js";
@@ -17,6 +15,22 @@ function sanitizarYCodificar(texto) {
   if (typeof texto !== "string") return "";
   const limpio = texto.trim().replace(/[\u0000-\u001F\u007F-\u009F]/g, "");
   return unescape(encodeURIComponent(limpio));
+}
+
+/**
+ * Divide texto largo en bloques compatibles con Notion (≤2000 caracteres cada uno).
+ */
+function dividirTextoEnBloques(texto, max = 1999) {
+  const bloques = [];
+  let posicion = 0;
+
+  while (posicion < texto.length) {
+    let fragmento = texto.slice(posicion, posicion + max);
+    bloques.push({ text: { content: fragmento } });
+    posicion += max;
+  }
+
+  return bloques;
 }
 
 /**
@@ -50,7 +64,7 @@ async function findTriggerContents(trigger) {
 }
 
 /**
- * Guarda una memoria curada en Notion con clave, sección, contenido y timestamp.
+ * Guarda una memoria curada en Notion con clave, sección, contenido dividido y timestamp.
  */
 async function guardarMemoriaCurada(memoria) {
   try {
@@ -67,12 +81,11 @@ async function guardarMemoriaCurada(memoria) {
         select: { name: seccion },
       },
       Contenido: {
-        rich_text: [{ text: { content: contenido } }],
+        rich_text: dividirTextoEnBloques(contenido),
       },
       Timestamp: {
         date: { start: timestamp },
       },
-      // No se incluye emocionalidad ni enlace
     };
 
     const response = await notion.pages.create({
