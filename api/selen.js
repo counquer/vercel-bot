@@ -44,10 +44,10 @@ export default async function handler(req, res) {
 
 // Lógica compartida API
 async function ejecutarTrigger(triggerRaw) {
-const cacheKey = `trigger-${trigger.trim().toLowerCase()}`;
+  const trigger = normalize(triggerRaw);
   logger.info("selen", "Trigger recibido normalizado:", trigger);
 
-  const cacheKey = cacheService.generateKey(trigger);
+  const cacheKey = `trigger-${trigger.trim().toLowerCase()}`;
   const cached = cacheService.get(cacheKey);
   if (cached) {
     logger.info("selen", "Respondiendo desde caché");
