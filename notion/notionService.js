@@ -1,3 +1,5 @@
+// notion/notionService.js
+
 import { Client } from "@notionhq/client";
 import dotenv from "dotenv";
 import logger from "../utils/logger.js";
@@ -71,22 +73,23 @@ async function guardarMemoriaCurada(memoria) {
     const clave = memoria.clave?.trim() || "sin-clave";
     const seccion = memoria.seccion?.trim() || "general";
     const contenido = sanitizarYCodificar(memoria.contenido || "");
+    const contenidoLimitado = contenido.slice(0, 2000); // ✅ Límite
     const timestamp = memoria.timestamp || new Date().toISOString();
 
-const propiedades = {
-  Clave: {
-    title: [{ text: { content: clave } }],
-  },
-  Seccion: {
-    select: { name: seccion },
-  },
-  Contenido: {
-   const contenidoLimitado = contenido.slice(0, 2000);
-  },
-  Timestamp: {
-    date: { start: timestamp },
-  },
-};
+    const propiedades = {
+      Clave: {
+        title: [{ text: { content: clave } }],
+      },
+      Seccion: {
+        select: { name: seccion },
+      },
+      Contenido: {
+        rich_text: [{ text: { content: contenidoLimitado } }],
+      },
+      Timestamp: {
+        date: { start: timestamp },
+      },
+    };
 
     const response = await notion.pages.create({
       parent: { database_id: DB_MEMORIA_CURADA },
