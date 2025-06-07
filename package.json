@@ -2,19 +2,17 @@
   "name": "selen-api",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "start": "node services/syncService.js",
-    "dev": "node api/selen.js",
     "lint": "eslint . --ext .js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-n": "^16.4.0",
+    "globals": "^13.24.0"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.4",
-    "dotenv": "^16.0.3",
-    "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.28.0",
-    "eslint": "^9.28.0"
+    "dotenv": "^16.3.1"
   }
 }
