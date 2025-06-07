@@ -31,8 +31,8 @@ async function findTriggerContents(trigger) {
       filter: {
         property: "Clave",
         rich_text: {
-          contains: triggerNormalizado
-        }
+          contains: triggerNormalizado,
+        },
       },
     });
 
@@ -50,7 +50,7 @@ async function findTriggerContents(trigger) {
 }
 
 /**
- * Guarda una memoria curada en Notion con clave, sección, contenido, emocionalidad, timestamp y enlace contextual.
+ * Guarda una memoria curada en Notion con clave, sección, contenido y timestamp.
  */
 async function guardarMemoriaCurada(memoria) {
   try {
@@ -58,8 +58,6 @@ async function guardarMemoriaCurada(memoria) {
     const seccion = memoria.seccion?.trim() || "general";
     const contenido = sanitizarYCodificar(memoria.contenido || "");
     const timestamp = memoria.timestamp || new Date().toISOString();
-    const emocionalidad = memoria.emocionalidad || "neutro";
-    const enlace = memoria.enlace || null;
 
     const propiedades = {
       Clave: {
@@ -74,14 +72,8 @@ async function guardarMemoriaCurada(memoria) {
       Timestamp: {
         date: { start: timestamp },
       },
-      Emocionalidad: {
-        rich_text: [{ text: { content: emocionalidad } }],
-      },
+      // No se incluye emocionalidad ni enlace
     };
-
-    if (enlace) {
-      propiedades.Enlace = { url: enlace };
-    }
 
     const response = await notion.pages.create({
       parent: { database_id: DB_MEMORIA_CURADA },
