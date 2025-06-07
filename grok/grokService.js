@@ -16,7 +16,7 @@ async function completar(prompt) {
     throw new Error("Falta la variable de entorno GROK_API_KEY");
   }
 
-  const endpoint = "https://api.grok.x.ai/completions"; // Ajusta si usas proxy
+const endpoint = "https://api.x.ai/v1/completions"; // Ajusta si usas proxy
 
   const response = await fetch(endpoint, {
     method: "POST",
