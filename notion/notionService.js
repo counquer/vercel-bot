@@ -1,50 +1,61 @@
 import { Client } from "@notionhq/client";
 import dotenv from "dotenv";
+import logger from "../utils/logger.js";
 dotenv.config();
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
 const DATABASE_ID = process.env.DB_MEMORIA_CURADA;
 
-function pageToMemoria(page) {
-  return {
-    id: page.id,
-    respuesta: page.properties.Respuesta?.rich_text?.[0]?.plain_text || "",
-    timestamp: page.properties.Timestamp?.date?.start || "",
-  };
+/**
+ * Limpia texto: remueve caracteres invisibles y codifica como UTF-8 seguro.
+ */
+function sanitizarYCodificar(texto) {
+  if (typeof texto !== "string") return "";
+  const limpio = texto.trim().replace(/[\u0000-\u001F\u007F-\u009F]/g, "");
+  return unescape(encodeURIComponent(limpio));
 }
 
-async function obtenerTodasMemoriasCuradas() {
-  let results = [];
-  let cursor = undefined;
-
-  do {
-    const response = await notion.databases.query({
-      database_id: DATABASE_ID,
-      start_cursor: cursor,
-      page_size: 100,
-    });
-    results = results.concat(response.results);
-    cursor = response.has_more ? response.next_cursor : undefined;
-  } while (cursor);
-
-  return results.map(pageToMemoria);
-}
-
+/**
+ * Guarda una memoria curada en Notion con clave, sección, contenido y timestamp.
+ */
 async function guardarMemoriaCurada(memoria) {
-  return await notion.pages.create({
-    parent: { database_id: DATABASE_ID },
-    properties: {
-      Respuesta: {
-        rich_text: [{ text: { content: memoria.respuesta } }],
+  try {
+    const clave = memoria.clave?.trim() || "sin-clave";
+    const seccion = memoria.seccion?.trim() || "general";
+    const contenido = sanitizarYCodificar(memoria.contenido || "");
+    const timestamp = memoria.timestamp || new Date().toISOString();
+
+    const response = await notion.pages.create({
+      parent: { database_id: DATABASE_ID },
+      properties: {
+        Clave: {
+          title: [{ text: { content: clave } }],
+        },
+        Sección: {
+          select: { name: seccion },
+        },
+        Contenido: {
+          rich_text: [{ text: { content: contenido } }],
+        },
+        Timestamp: {
+          date: { start: timestamp },
+        },
       },
-      Timestamp: {
-        date: { start: memoria.timestamp },
-      },
-    },
-  });
+    });
+
+    if (!response || !response.id) {
+      logger.error("notion", "Respuesta inválida al guardar en Notion.");
+      throw new Error("No se pudo guardar la memoria.");
+    }
+
+    logger.info("notion", "Memoria curada guardada correctamente:", response.id);
+    return response;
+  } catch (err) {
+    logger.error("notion", "Error al guardar memoria curada:", err.message);
+    throw err;
+  }
 }
 
 export default {
-  obtenerTodasMemoriasCuradas,
-  guardarMemoriaCurada,
+  guardarMemoriaCurada
 };
