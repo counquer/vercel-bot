@@ -13,7 +13,7 @@ export default function validateEnvVars() {
     "VERCEL_AUTOMATION_BYPASS_SECRET"
   ];
 
-  const missing = requiredVars.filter(v => !process.env[v]);
+  const missing = requiredVars.filter((v) => !process.env[v]);
   if (missing.length > 0) {
     console.error("❌ Faltan variables de entorno:", missing.join(", "));
     process.exit(1);
@@ -21,17 +21,14 @@ export default function validateEnvVars() {
 }
 
 /**
- * Verifica si el header recibido coincide con el secreto de Vercel.
- * @param {string} headerValue
- * @returns {boolean}
+ * Verifica si el header coincide con el token de bypass configurado.
  */
 export function checkAutomationBypass(headerValue) {
   return headerValue === process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
 }
 
 /**
- * Detecta si está corriendo en entorno local o Vercel.
+ * Detecta si el entorno actual es local o Vercel
  */
-export const isLocal = () => process.env.VERCEL !== "1";
-export const isVercel = () => process.env.VERCEL === "1";
-
+export const isLocal = process.env.VERCEL !== "1";
+export const isVercel = process.env.VERCEL === "1";
