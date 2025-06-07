@@ -11,7 +11,6 @@ import logger from "../utils/logger.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-
 // Validar variables de entorno al inicio
 validateEnvVars();
 
@@ -43,7 +42,7 @@ export default async function handler(req, res) {
   }
 }
 
-// Lógica compartida API / CLI
+// Lógica compartida API
 async function ejecutarTrigger(triggerRaw) {
   const trigger = normalize(triggerRaw);
   logger.info("selen", "Trigger recibido normalizado:", trigger);
