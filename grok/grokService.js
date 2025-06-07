@@ -11,7 +11,7 @@ const GROK_API_KEY = process.env.GROK_API_KEY;
  * @param {string} prompt - El texto completo a enviar a Grok.
  * @returns {Promise<string>} - La respuesta generada.
  */
-export async function completar(prompt) {
+async function completar(prompt) {
   if (!GROK_API_KEY) {
     throw new Error("Falta la variable de entorno GROK_API_KEY");
   }
@@ -25,7 +25,7 @@ export async function completar(prompt) {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      model: "grok-1",              // o el modelo que estés usando
+      model: "grok-1",
       prompt: prompt,
       max_tokens: 1024,
       temperature: 0.7
@@ -40,3 +40,7 @@ export async function completar(prompt) {
   const data = await response.json();
   return data.choices?.[0]?.text?.trim() || "(sin respuesta)";
 }
+
+export default {
+  completar
+};
