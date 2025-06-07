@@ -6,6 +6,7 @@ import logger from "../utils/logger.js";
 dotenv.config();
 
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
+
 const DB_TRIGGERS = process.env.DB_TRIGGERS;
 const DB_MEMORIA_CURADA = process.env.DB_MEMORIA_CURADA;
 
@@ -19,7 +20,7 @@ function sanitizarYCodificar(texto) {
 }
 
 /**
- * Busca memorias por clave usando filtro contains y normalización básica
+ * Busca memorias por trigger usando filtro contains y normalización básica
  */
 async function findTriggerContents(trigger) {
   try {
@@ -30,8 +31,8 @@ async function findTriggerContents(trigger) {
       filter: {
         property: "Clave",
         rich_text: {
-          contains: triggerNormalizado,
-        },
+          contains: triggerNormalizado
+        }
       },
     });
 
@@ -43,7 +44,7 @@ async function findTriggerContents(trigger) {
     logger.info("notion", `Se encontraron ${contenidos.length} memorias para trigger '${trigger}'`);
     return contenidos;
   } catch (error) {
-    logger.error("notion", "Error al consultar Notion (TRIGGERS):", error.message);
+    logger.error("notion", "Error al consultar Notion:", error.message);
     throw error;
   }
 }
