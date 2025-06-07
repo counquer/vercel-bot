@@ -1,5 +1,7 @@
-import fetch from "node-fetch";
 import dotenv from "dotenv";
+dotenv.config();
+
+import fetch from "node-fetch";
 import http from "http";
 import { Client } from "@notionhq/client";
 
