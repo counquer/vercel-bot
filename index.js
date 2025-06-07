@@ -1,8 +1,6 @@
-// index.js (o server.js si prefieres ese nombre como entry point)
-
-import express from "express";
+//import express from "express";
 import dotenv from "dotenv";
-import validateEnvVars, { isLocal, isVercel } from "./config/envValidator.js";
+import validateEnvVars from "./config/envValidator.js";
 import selenHandler from "./api/selen.js";
 import logger from "./utils/logger.js";
 
@@ -15,7 +13,7 @@ validateEnvVars();
 const app = express();
 app.use(express.json());
 
-// Ruta de prueba para verificar que Express y la API respondan
+// Ruta POST principal
 app.post("/api/selen", selenHandler);
 
 const PORT = process.env.PORT || 3000;
@@ -24,7 +22,7 @@ app.listen(PORT, () => {
   logger.info("local", `Servidor local iniciado en http://localhost:${PORT}`);
 });
 
-// Manejo de errores globales para que no se caiga el proceso en test local
+// Manejo de errores globales
 process.on("uncaughtException", (err) => {
   logger.error("global", "🔴 Excepción no capturada:", err);
 });
