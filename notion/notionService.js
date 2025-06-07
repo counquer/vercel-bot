@@ -73,7 +73,7 @@ async function guardarMemoriaCurada(memoria) {
     const clave = memoria.clave?.trim() || "sin-clave";
     const seccion = memoria.seccion?.trim() || "general";
     const contenido = sanitizarYCodificar(memoria.contenido || "");
-    const contenidoLimitado = contenido.slice(0, 2000); // ✅ Límite
+    const contenidoLimitado = contenido.slice(0, 3000); // ✅ Límite
     const timestamp = memoria.timestamp || new Date().toISOString();
 
     const propiedades = {
