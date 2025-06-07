@@ -73,20 +73,20 @@ async function guardarMemoriaCurada(memoria) {
     const contenido = sanitizarYCodificar(memoria.contenido || "");
     const timestamp = memoria.timestamp || new Date().toISOString();
 
-    const propiedades = {
-      Clave: {
-        title: [{ text: { content: clave } }],
-      },
-      Sección: {
-        select: { name: seccion },
-      },
-      Contenido: {
-        rich_text: dividirTextoEnBloques(contenido),
-      },
-      Timestamp: {
-        date: { start: timestamp },
-      },
-    };
+const propiedades = {
+  Clave: {
+    title: [{ text: { content: clave } }],
+  },
+  Seccion: {
+    select: { name: seccion },
+  },
+  Contenido: {
+    rich_text: [{ text: { content: contenido } }],
+  },
+  Timestamp: {
+    date: { start: timestamp },
+  },
+};
 
     const response = await notion.pages.create({
       parent: { database_id: DB_MEMORIA_CURADA },
